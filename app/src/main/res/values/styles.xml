@@ -5,7 +5,30 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/black</item>
     </style>
+
+    <style name="button_style_1">
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black2</item>
+        <item name="android:fontFamily">@font/gotham_book_regular</item>
+    </style>
+
+    <style name="SwitchCompatTheme">
+        <item name="colorControlActivated">#4cbc17</item>
+    </style>
+
 
 </resources>
