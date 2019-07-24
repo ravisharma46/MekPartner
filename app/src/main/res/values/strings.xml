@@ -12,6 +12,13 @@
     <string name="by_creating_">By creating an account,</string>
     <string name="signup">Signup</string>
     <string name="login">Login</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="choose_partner_type">Choose partner type:-</string>
+    <string name="rubbing_polishing"><![CDATA[Rubbing & polishing]]></string>
+    <string name="pickup_date_time"><![CDATA[Pickup date & time]]></string>
+    <string name="popup"><![CDATA[&#8226; 5 coins will be charged for one call<br />&#8226; 3 coins wii be charged for one sms.]]></string>
+    <string name="_3_coins_will_be_charged_to_accept_the_particular_booking">3 coins will be charged to accept the particular booking</string>
 
 
 </resources>
