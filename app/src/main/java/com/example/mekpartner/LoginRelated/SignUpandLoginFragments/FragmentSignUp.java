@@ -1,7 +1,9 @@
 package com.example.mekpartner.LoginRelated.SignUpandLoginFragments;
 
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -25,6 +28,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
 import com.example.mekpartner.R;
 
 import org.json.JSONArray;
@@ -45,7 +49,7 @@ public class FragmentSignUp extends Fragment {
     private ProgressDialog mProgressDialog;
 
     private List<String> mPartnerList;
-    private Spinner mSpinnerPartnerType;
+    private TextView tvPartnerType;
     private String mPhone;
 
     private String mPass;
@@ -72,7 +76,7 @@ public class FragmentSignUp extends Fragment {
         TextView tv_phone = mRootView.findViewById(R.id.phone_no);
         tv_phone.setText(mPhone);
 
-        mSpinnerPartnerType = mRootView.findViewById(R.id.partner_type);
+        tvPartnerType = mRootView.findViewById(R.id.partner_type);
 
         mPartnerList = new ArrayList<>();
         mPartnerList.add("Choose Partner Type");
@@ -112,6 +116,26 @@ public class FragmentSignUp extends Fragment {
                     et_refaral.setVisibility(View.GONE);
             }
         });
+
+
+        tvPartnerType.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),R.style.CustomDialogTheme);
+
+                LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService( Context.LAYOUT_INFLATER_SERVICE );
+                View dialogView = inflater.inflate(R.layout.dilog_choose_partner_type ,null);
+
+                // Specify alert dialog is not cancelable/not ignorable
+                builder.setCancelable(true);
+
+                // Set the custom layout as alert dialog view
+                builder.setView(dialogView);
+                final AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
+
 
         tv_signup.setOnClickListener(new View.OnClickListener() {
             @Override
