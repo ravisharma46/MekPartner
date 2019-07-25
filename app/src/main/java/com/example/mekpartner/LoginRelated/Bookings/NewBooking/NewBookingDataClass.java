@@ -4,17 +4,26 @@ import java.security.PublicKey;
 
 public class NewBookingDataClass {
 
-    String description;
+    String status,serviceType;
 
-    public NewBookingDataClass(String des){
-        this.description=des;
+    public NewBookingDataClass(String status,String serviceType){
+        this.status=status;
+        this.serviceType=serviceType;
     }
 
-    public String getDescription() {
-        return description;
+    public String getStatus() {
+        return status;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setStatus(String status) {
+        this.status =status;
+    }
+
+    public void setServiceType(String serviceType) {
+        this.serviceType = serviceType;
+    }
+
+    public String getServiceType() {
+        return serviceType;
     }
 }
