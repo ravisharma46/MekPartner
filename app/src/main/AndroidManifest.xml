@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.ConfirmBookingRs">
-
-        </activity>
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.CustomerPickup"></activity>
+        <activity android:name=".LoginRelated.Services.SosSP.ForRestService.ConfirmPickup_fRs" />
+        <activity android:name=".LoginRelated.CustomerReport.ViewCustomerReport" />
+        <activity android:name=".LoginRelated.CustomerReport.SignatureActivity" />
+        <activity android:name=".LoginRelated.CustomerReport.AddCustomerReport" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.ScanQRcode" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.Ub_PartnerDropOff" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.ConfirmBookingRs" />
         <activity
             android:name=".LoginRelated.NavDrawer.NavActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
