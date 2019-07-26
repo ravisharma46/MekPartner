@@ -11,8 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.mekpartner.LoginRelated.Services.RegularServicePartner.CustomerPickup;
+import com.example.mekpartner.LoginRelated.Services.RegularServicePartner.ServiceInProgress;
 import com.example.mekpartner.LoginRelated.Services.RegularServicePartner.Ub_PartnerDropOff;
 import com.example.mekpartner.LoginRelated.Services.SosSP.ForRestService.ConfirmPickup_fRs;
+import com.example.mekpartner.LoginRelated.Services.SosSP.TowingChauffer.ChaufferCustomerDropoff;
 import com.example.mekpartner.R;
 
 import java.util.ArrayList;
@@ -55,43 +57,49 @@ public class OngoingBookingAdapter extends  RecyclerView.Adapter<OngoingBookingA
         String serviceType=data.getServiceType();
         String status=data.getStatus();
 
+
+
         if(serviceType.contains("Denting Painting")){
-
-            if(status.contains("Awaiting customer pickup")){
-                viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent i = new Intent(view.getContext(), CustomerPickup.class);
-                        view.getContext().startActivity(i);
-
-                    }
-                });
-            }
-
-            else{
-                viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent i = new Intent(view.getContext(), Ub_PartnerDropOff.class);
-                        view.getContext().startActivity(i);
-
-                    }
-                });
-            }
-
-
-        }
-
-        else{
             viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i = new Intent(view.getContext(), ConfirmPickup_fRs.class);
+                    Intent i = new Intent(view.getContext(), ServiceInProgress.class);
+                    i.putExtra("key","RestService");
                     view.getContext().startActivity(i);
 
                 }
             });
+
+
         }
+        if(serviceType.contains("Emergency Towing")){
+            viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(view.getContext(), ChaufferCustomerDropoff.class);
+                    view.getContext().startActivity(i);
+
+                }
+            });
+
+
+        }
+
+        if(serviceType.contains("Flat Tyre")){
+            viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(view.getContext(), ServiceInProgress.class);
+                    i.putExtra("key","SosRest");
+                    view.getContext().startActivity(i);
+
+                }
+            });
+
+
+        }
+
+
 
 
 
