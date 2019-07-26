@@ -24,9 +24,10 @@ import java.util.Objects;
 
 public class ConfirmBookingRs extends AppCompatActivity {
 
-    ImageView fourthButton;
-    int toggle;
-    Tooltip tooltip;
+    private  ImageView fourthButton;
+    private int toggle;
+    private Tooltip tooltip;
+    private LinearLayout ll_availdelivery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,17 @@ public class ConfirmBookingRs extends AppCompatActivity {
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
+
+        ll_availdelivery=findViewById(R.id.ll_availdelivery);
+
+
+        Bundle extras= getIntent().getExtras();
+        if(extras!=null){
+            String value= extras.getString("key");
+            if(value.contains("chauffer")){
+                ll_availdelivery.setVisibility(View.GONE);
+            }
+        }
 
 
 
