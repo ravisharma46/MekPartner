@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.CustomerPickup"></activity>
+        <activity android:name=".LoginRelated.TechnicalSupport.Technical_support"></activity>
+        <activity
+            android:name=".LoginRelated.ServiceManagement.ServiceManagement"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".LoginRelated.Bookings.History.Service_completed" />
+        <activity android:name=".LoginRelated.Services.SosSP.TowingChauffer.ChaufferCustomerDropoff" />
+        <activity android:name=".LoginRelated.Services.SosSP.ForRestService.CustomerDropOff" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.PickupConfirm" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.ServiceInProgress" />
+        <activity android:name=".LoginRelated.Services.RegularServicePartner.CustomerPickup" />
         <activity android:name=".LoginRelated.Services.SosSP.ForRestService.ConfirmPickup_fRs" />
         <activity android:name=".LoginRelated.CustomerReport.ViewCustomerReport" />
         <activity android:name=".LoginRelated.CustomerReport.SignatureActivity" />
