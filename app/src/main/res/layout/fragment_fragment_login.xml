@@ -6,18 +6,14 @@
     tools:context=".LoginRelated.SignUpandLoginFragments.FragmentLogin">
 
 
-    <TextView
+    <ImageView
         android:layout_marginTop="16dp"
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/mek_logo"
+        android:src="@drawable/mek_logo"
         android:gravity="center"
-        android:fontFamily="@font/montserrat_medium"
-        android:text=" MekPartner"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
+        />
 
     <ScrollView
         android:layout_width="match_parent"

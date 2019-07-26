@@ -13,6 +13,7 @@
     <string name="signup">Signup</string>
     <string name="login">Login</string>
     <string name="rubbing">Rubbing &amp; polishing </string>
+    <string name="exterior"><![CDATA[Exterior Rubbing & Polishing]]></string>
     <string name="drop_date">Drop date &amp; time </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -27,6 +28,7 @@
     <string name="_3_coins_will_be_charged_to_accept_the_particular_booking">3 coins will be charged to accept the particular booking</string>
     <string name="petrol_diesel_meter">Petrol/ Diesel Meter</string>
     <string name="message">I aurthorize to execute the jobs described herin using the necessary material cost. I understand that the vehicle is stored, repaired and tested at my own risk</string>
+    <string name="serviced_drop_done"><![CDATA[Serviced & Drop Done]]></string>
     <string-array name="select_battery">
         <item>Oxide</item>
         <item>Exide</item>

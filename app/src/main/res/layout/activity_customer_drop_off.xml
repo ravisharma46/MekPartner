@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    tools:context=".LoginRelated.Services.SosSP.ForRestService.CustomerDropOff">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/chart_deep_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:text="Awaiting Customer Dropoff"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Customer details"
+                    android:textColor="@color/app_grey_headline_caption"
+                    android:textSize="12sp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/frame_rect_02">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Name"
+                        android:textColor="@color/app_grey_headline_caption"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Name of the customer"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/gradient_bottom"
+                        android:scaleY=".5" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="88dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Address"
+                        android:textColor="@color/app_grey_headline_caption"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="116dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Address of the customer"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:padding="16dp"
+                        android:src="@drawable/mobile_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Call"
+                        android:textColor="@color/app_grey_headline_caption"
+                        android:textSize="12sp" />
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@string/drop_date"
+                    android:textColor="@color/app_grey_headline_caption"
+                    android:textSize="12sp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="16dp"
+                        android:text="Tuesday, 25th Aug"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="16dp"
+                        android:text="11:30 a.m"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:paddingRight="54dp"
+                        android:paddingLeft="54dp"
+                        android:id="@+id/bt_report_view"
+                        android:background="@drawable/grey_button"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="View Customer Report"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Payment details"
+                    android:textColor="@color/app_grey_headline_caption"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/frame_rect_02"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingTop="24dp"
+                            android:text="Sub Total"
+                            android:textColor="@color/app_grey_headline_caption"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="24dp"
+                            android:paddingRight="8dp"
+                            android:text="3,200"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Tax"
+                            android:textColor="@color/app_grey_headline_caption"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="8dp"
+                            android:text="200"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Additional charges"
+                            android:textColor="@color/app_grey_headline_caption"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="8dp"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Total"
+                            android:textColor="@color/app_grey_headline_caption"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="8dp"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/gradient_bottom"
+                        android:scaleY=".5" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Amount to collect"
+                            android:textColor="@color/app_caption_dark_grey"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="16dp"
+                            android:text="COD"
+                            android:textColor="@color/app_caption_dark_grey"
+                            android:textSize="14sp" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_otp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="8dp"
+                        android:text="Enter PIN"
+                        android:textColor="@color/app_caption_dark_grey"
+                        android:textSize="10sp" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="48dp"
+                        android:layout_marginLeft="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/frame_rect_02">
+
+                        <com.broooapps.otpedittext2.OtpEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:padding="8dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textSize="24sp"
+                            app:oev_primary_color="@color/chart_deep_red"
+                            app:oev_secondary_color="@color/light_gray"
+                            />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/frame_rect_02">
+
+                <Button
+                    android:id="@+id/bt_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/done_red_button"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/serviced_drop_done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRelated.ServiceManagement.ServiceManagement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:id="@+id/iv_back"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_title"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="48dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/iv_titleimage"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:paddingRight="16dp"
+                android:textAllCaps="false"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@color/white"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabSelectedTextColor="@color/red_dark"
+                app:tabIndicatorColor="@color/chart_deep_red"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

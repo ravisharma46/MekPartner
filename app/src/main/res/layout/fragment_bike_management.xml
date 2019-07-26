@@ -1,0 +1,3256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_height="wrap_content"
+    tools:context=".LoginRelated.ServiceManagement.ServiceManagement">
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:orientation="vertical">
+
+            <!--All service -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/gradient_bottom"
+                android:scaleY=".5" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="28dp"
+                        android:text="Available to all services"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="32dp"
+                        android:enabled="true"
+                        android:theme="@style/SwitchCompatTheme"
+                        android:switchMinWidth="48dp"
+                        />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gradient_bottom"
+                android:scaleY=".5" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="match_parent">
+
+
+                <!--Servicce detials -->
+
+                <FrameLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gotham_book"
+                        android:textColor="@color/black"
+                        android:text="Service Details"
+                        android:paddingLeft="16dp"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Availability"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="24dp"
+                        android:layout_gravity="right"/>
+                </FrameLayout>
+
+                <!--General service -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/btn_faqs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/generl_services"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="General Services"
+                            android:drawableLeft="@drawable/generl_services" />
+
+                        <TextView
+                            android:id="@+id/btn_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/standard"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Standard Services"
+                                android:drawableLeft="@drawable/standard" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/general_standard_bike_serice_switch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/comprehensive"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Comprehensive Services"
+                                android:drawableLeft="@drawable/comprehensive" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/general_comprehensive_services_bike"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/health__inspectionxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Health Inspection"
+                                android:drawableLeft="@drawable/health__inspectionxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/general_health_inspection_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Reparing -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/reparing"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Reparing"
+                            android:drawableLeft="@drawable/reparing" />
+
+                        <TextView
+                            android:id="@+id/btn_general_services_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:textAllCaps="false"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/brake_shoe__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Shoe Replacement"
+                                android:drawableLeft="@drawable/brake_shoe__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/break_disk_pad__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Pad Replacement"
+                                android:drawableLeft="@drawable/brake_pad__disk_replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/clutch_cable__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Clutch Cable Replacement"
+                                android:drawableLeft="@drawable/clutch_cable__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/break_disk_pad__replacementxhdpi"
+                                android:drawableLeft="@drawable/break_disk_pad__replacementxhdpi"
+                                android:drawablePadding="8dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/gotham_book"
+                                android:gravity="start"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="Brake Pad/Disk Pad Replacement"
+                                android:textAllCaps="false"
+                                android:textColor="@color/mek_grey"
+                                android:textSize="12sp" />
+
+                            <FrameLayout
+                                android:layout_weight="1.5"
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/weight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:enabled="true"
+                                    android:gravity="right"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/diskbreak_bleedingxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Disk Brake Bleeding"
+                                android:drawableLeft="@drawable/diskbreak_bleedingxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/disk_plate_replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Disc Plate Replacement"
+                                android:drawableLeft="@drawable/disk_plate_replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/disc_caliperxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Disc Caliper"
+                                android:drawableLeft="@drawable/disc_caliperxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/master_cylinder__overhaulxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Master Cylinder OverHaul"
+                                android:drawableLeft="@drawable/master_cylinder__overhaulxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/brakes_cleaningxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Cleaning"
+                                android:drawableLeft="@drawable/brakes_cleaningxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/accelerator_cable__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Accelerator Cable Replacement"
+                                android:drawableLeft="@drawable/accelerator_cable__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:layout_weight="1"
+                                android:paddingRight="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right|center"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/speedometer_cable__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="SpeedoMeter Cable Replacement"
+                                android:drawableLeft="@drawable/speedometer_cable__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:layout_weight="1.5"
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/seat_cable__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Seat Cable Replacement"
+                                android:drawableLeft="@drawable/seat_cable__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/brake_cable__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Cable Replacement"
+                                android:drawableLeft="@drawable/brake_cable__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/throttle_cable___replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Throttle Cable Replacement"
+                                android:drawableLeft="@drawable/throttle_cable___replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/clutch_cable___replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Clutch Cable Replacement"
+                                android:drawableLeft="@drawable/clutch_cable___replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/clutch_lever__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Clutch Lever Replacement"
+                                android:drawableLeft="@drawable/clutch_lever__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/brake_lever__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Lever Replacement"
+                                android:drawableLeft="@drawable/brake_lever__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/rear_brake__pedal__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Rear Brake Pedal Replacement"
+                                android:drawableLeft="@drawable/rear_brake__pedal__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/clutch_cable___replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Clutch Cable Replacement"
+                                android:drawableLeft="@drawable/clutch_cable___replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/lock_assembly_or_ignition__key_assembly__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Lock Assy or Ignition Key Assy Replacement"
+                                android:drawableLeft="@drawable/lock_assembly_or_ignition__key_assembly__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:layout_weight="1.5"
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/cone_set_or_steering__ball_race__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Cone Set Or Steering Ball Race Replacement"
+                                android:drawableLeft="@drawable/cone_set_or_steering__ball_race__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:layout_weight="1.5"
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/switch_assembly__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Switch Assembly Replacement"
+                                android:drawableLeft="@drawable/switch_assembly__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/wiring__checkupxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Wiring Check Up"
+                                android:drawableLeft="@drawable/wiring__checkupxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/wiring_harness__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Wiring Harness Replacement"
+                                android:drawableLeft="@drawable/wiring_harness__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/magnet_coil__checkupxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Magnet Coil Checkup"
+                                android:drawableLeft="@drawable/magnet_coil__checkupxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/wiring__overhaulxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Wiring Overhaul"
+                                android:drawableLeft="@drawable/wiring__overhaulxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Wheel Care -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/wheel_caring"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Wheel Care"
+                            android:drawableLeft="@drawable/wheel_caring" />
+
+                        <TextView
+                            android:id="@+id/btn_wheel_care_services_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/tyre_replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Tyre Replacement"
+                                android:drawableLeft="@drawable/tyre_replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/spoke_wheel__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Spoke Wheel Replacement"
+                                android:drawableLeft="@drawable/spoke_wheel__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/wheel_standard_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/alloy_wheel__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Alloy Wheel Replacement"
+                                android:drawableLeft="@drawable/alloy_wheel__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/wheel_comprehensive_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/rim_or_alloy__wheel_truingxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Rim Or Alloy Wheel Replacement"
+                                android:drawableLeft="@drawable/rim_or_alloy__wheel_truingxhdpi" />
+
+                            <FrameLayout
+                                android:layout_weight="1.5"
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/wheel_bearing__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Wheel Bearing Replacement"
+                                android:drawableLeft="@drawable/wheel_bearing__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/tyre_tube__puncturexhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Tyre Tube Puncture"
+                                android:drawableLeft="@drawable/tyre_tube__puncturexhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/tyre_tubeless__puncturexhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Tyre Tubeless Puncture"
+                                android:drawableLeft="@drawable/tyre_tubeless__puncturexhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/tube__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Tube Replacement"
+                                android:drawableLeft="@drawable/tube__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Body Part Fixer -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/body_part_fixer"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Body Part Fixer"
+                            android:drawableLeft="@drawable/body_part_fixer" />
+
+                        <TextView
+                            android:id="@+id/btn_denting_painting_services_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:textAllCaps="false"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/center_stand__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Centre Stand Replacement"
+                                android:drawableLeft="@drawable/center_stand__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/denting_primry_serice_switch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/handlebar__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Hanlebar Replacement"
+                                android:drawableLeft="@drawable/handlebar__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/denting_standard_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/side_stand__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Side Stand Replacement"
+                                android:drawableLeft="@drawable/side_stand__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/denting_comprehensive_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/mirror_replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Mirror Replacement"
+                                android:drawableLeft="@drawable/mirror_replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/lock_set__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Lock Set Replacement"
+                                android:drawableLeft="@drawable/lock_set__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/footrest__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Footrest Replacement"
+                                android:drawableLeft="@drawable/footrest__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/mud_guard__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Mud Guard Replacement"
+                                android:drawableLeft="@drawable/mud_guard__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/crash_guard__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Crash guard Replacement"
+                                android:drawableLeft="@drawable/crash_guard__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/chain_cover__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Chain Cover Replacement"
+                                android:drawableLeft="@drawable/chain_cover__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/fork_bend__removalxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Fork Bend Removal"
+                                android:drawableLeft="@drawable/fork_bend__removalxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/headlight_bulb__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="HeadLight Unit Replacement"
+                                android:drawableLeft="@drawable/headlight_bulb__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/headlight_bulb__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="HeadLight Bulb Replacement"
+                                android:drawableLeft="@drawable/headlight_bulb__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/tail_light__replacement_xhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Tail Light Bulb Replacement"
+                                android:drawableLeft="@drawable/tail_light__replacement_xhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/indicator_bulb_rexhdpi"
+                                android:drawableLeft="@drawable/indicator_bulb_rexhdpi"
+                                android:drawablePadding="8dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/gotham_book"
+                                android:gravity="start"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="Indicator Bulb Replacement"
+                                android:textAllCaps="false"
+                                android:textColor="@color/mek_grey"
+                                android:textSize="12sp" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/fuse_replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Fuse Replacement"
+                                android:drawableLeft="@drawable/fuse_replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/parking_bulb__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Parking Bulb Replacement"
+                                android:drawableLeft="@drawable/parking_bulb__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Bike and Engine care -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/bike_and_engine"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Bike and Engine Care"
+                            android:drawableLeft="@drawable/bike_and_engine" />
+
+                        <TextView
+                            android:id="@+id/btn_car_care_services_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/oiling_and__lubricantxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Oiling And Lubricant"
+                                android:drawableLeft="@drawable/oiling_and__lubricantxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/coolant__tpo_upxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:text="Coolant Top Up"
+                                android:drawableLeft="@drawable/coolant__tpo_upxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/battery_distilled__water_top_upxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Battery Distilled Water Top Up"
+                                android:drawableLeft="@drawable/battery_distilled__water_top_upxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:id="@+id/car_care_comprehensive_services"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/half_engine__overhaulxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Half Engine OverHaul"
+                                android:drawableLeft="@drawable/half_engine__overhaulxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/full_engine__overhaulxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Full Engine OverHaul"
+                                android:drawableLeft="@drawable/full_engine__overhaulxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/clutch__overhaulxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Clutch OverHaul"
+                                android:drawableLeft="@drawable/clutch__overhaulxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/battery__chargingxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Battery Charging"
+                                android:drawableLeft="@drawable/battery__chargingxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/battery__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Battery Replacement"
+                                android:drawableLeft="@drawable/battery__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/fork_oil_replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Fork Oil Replacement"
+                                android:drawableLeft="@drawable/fork_oil_replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/brake_fluid__replacementxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Brake Fluid Replacement"
+                                android:drawableLeft="@drawable/brake_fluid__replacementxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/carburettor__cleanxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Carburettor Replacement"
+                                android:drawableLeft="@drawable/carburettor__cleanxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Others -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/call_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/btn_others"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:drawableStart="@drawable/others"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Others"
+                            android:drawableLeft="@drawable/others" />
+
+                        <TextView
+                            android:id="@+id/btn_othersDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:gravity="right"
+                            android:focusable="true"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:fontFamily="@font/gotham_book"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:text="Details"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Other Mechanical Problem"
+                                android:drawableStart="@drawable/other_mechanicalxhdpi"
+                                android:drawableLeft="@drawable/other_mechanicalxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/gotham_book"
+                                android:drawableStart="@drawable/other_electricalxhdpi"
+                                android:gravity="start"
+                                android:focusable="true"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:drawablePadding="8dp"
+                                android:textColor="@color/mek_grey"
+                                android:textAllCaps="false"
+                                android:text="Other Electrical Problem"
+                                android:drawableLeft="@drawable/other_electricalxhdpi" />
+
+                            <FrameLayout
+                                android:paddingRight="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:gravity="right"
+                                    android:enabled="true"
+                                    android:switchMinWidth="48dp"
+                                    android:theme="@style/SwitchCompatTheme" />
+
+                            </FrameLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/done_red_button"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
