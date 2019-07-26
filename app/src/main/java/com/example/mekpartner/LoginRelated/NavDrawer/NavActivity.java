@@ -31,6 +31,8 @@ import com.example.mekpartner.LoginRelated.Bookings.NewBooking.NewBooking;
 import com.example.mekpartner.LoginRelated.Bookings.OngoingBooking.OngoingBooking;
 import com.example.mekpartner.LoginRelated.Bookings.UpcomingBooking.UpcomingBooking;
 import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
+import com.example.mekpartner.LoginRelated.ServiceManagement.ServiceManagement;
+import com.example.mekpartner.LoginRelated.TechnicalSupport.Technical_support;
 import com.example.mekpartner.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -59,7 +61,7 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private ActionBar toolbar;
-    private ImageView chaufer;
+    private ImageView iv_serviceManagement;
 
 
 
@@ -87,12 +89,11 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         setContentView(R.layout.activity_nav);
         Log.e(TAG,"Login successfully");
 
-
-        chaufer=(ImageView) findViewById(R.id.chaufer);
-        chaufer.setOnClickListener(new View.OnClickListener() {
+        iv_serviceManagement=findViewById(R.id.iv_sm);
+        iv_serviceManagement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(NavActivity.this, Chauffer.class));
+                startActivity(new Intent(NavActivity.this, ServiceManagement.class));
             }
         });
 
@@ -471,4 +472,17 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         }, 250);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+
+        switch (item.getItemId()){
+            case R.id.menu_support:
+                startActivity(new Intent(NavActivity.this, Technical_support.class));
+                return  true;
+            default:
+            return super.onOptionsItemSelected(item);
+        }
+
+    }
 }
