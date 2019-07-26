@@ -53,16 +53,30 @@ public class NewBookingAdapter extends RecyclerView.Adapter<NewBookingAdapter.Vi
 
         String serviceType=data.getServiceType();
 
+  if(serviceType.contains("Emergency Towing")){
+      viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent i = new Intent(view.getContext(), ConfirmBookingRs.class);
+              i.putExtra("key","chauffer");
+              view.getContext().startActivity(i);
 
+          }
+      });
 
-            viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent i = new Intent(view.getContext(), ConfirmBookingRs.class);
-                    view.getContext().startActivity(i);
+  }
 
-                }
-            });
+  else{
+      viewHolder.cv_details.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent i = new Intent(view.getContext(), ConfirmBookingRs.class);
+              view.getContext().startActivity(i);
+
+          }
+      });
+  }
+
 
 
 
