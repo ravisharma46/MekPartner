@@ -34,10 +34,6 @@ public class FragmentLogin extends Fragment {
         mRootView= inflater.inflate(R.layout.fragment_fragment_login, container, false);
 
 
-        String mekpark ="<b><font bottom_nav_color=#da1f26>mek</font><font bottom_nav_color=#000000>Park</font></b>";
-        mekpark = "&#160 "+mekpark;
-        TextView tv_mekpark = mRootView.findViewById(R.id.logo);
-        tv_mekpark.setText(Html.fromHtml(mekpark));
 
         clickListener();
         return mRootView;
