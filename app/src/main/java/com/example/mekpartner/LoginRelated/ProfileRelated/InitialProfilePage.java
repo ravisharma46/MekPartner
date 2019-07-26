@@ -11,6 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.example.mekpartner.LoginRelated.ServiceManagement.ServiceManagement;
 import com.example.mekpartner.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -27,7 +29,7 @@ import static android.accounts.AccountManager.KEY_PASSWORD;
 public class InitialProfilePage extends AppCompatActivity {
 
     private static final int GALLARY_REQUEST = 1;
-    private Button change_passWord, bt_done,bt_checklist;
+    private Button change_passWord, bt_done,bt_SM;
     private FrameLayout account_details;
     private TextView name, mobile, email, address, partnerType, executive_id, name_1, update_pic;
     private CircleImageView imageView;
@@ -52,7 +54,7 @@ public class InitialProfilePage extends AppCompatActivity {
         partnerType = findViewById(R.id.tvpartner);
         executive_id = findViewById(R.id.tvprofileid);
         update_pic = findViewById(R.id.tvupdatepic);
-        bt_checklist=findViewById(R.id.bt_checklist);
+        bt_SM=findViewById(R.id.bt_checklist);
 
         try{
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -66,10 +68,10 @@ public class InitialProfilePage extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        bt_checklist.setOnClickListener(new View.OnClickListener() {
+        bt_SM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(InitialProfilePage.this, Checklist.class));
+                startActivity(new Intent(InitialProfilePage.this, ServiceManagement.class));
             }
         });
 
@@ -174,5 +176,22 @@ public class InitialProfilePage extends AppCompatActivity {
         alertDialog.show();
 
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
