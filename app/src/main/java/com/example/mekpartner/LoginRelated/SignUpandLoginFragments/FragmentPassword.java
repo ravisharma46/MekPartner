@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +26,7 @@ public class FragmentPassword extends Fragment {
 
     private final String TAG = "FragmentPassword";
     private View mRootView;
-    private ProgressDialog mProgressDialog;
+//    private ProgressDialog mProgressDialog;
 
   //  private LoginSessionManager mLoginSession;
 
@@ -58,6 +60,7 @@ public class FragmentPassword extends Fragment {
         return mRootView;
 
     }
+
     private void clickListener() {
 
         mRootView.findViewById(R.id.back_btn).setOnClickListener(v -> Objects.requireNonNull(getActivity()).onBackPressed());
@@ -80,7 +83,18 @@ public class FragmentPassword extends Fragment {
             Objects.requireNonNull(getActivity()).finish();
         });
 
+        mRootView.findViewById(R.id.forgot_password).setOnClickListener(view -> replaceFragment(new FragmentOTP()));
 
+    }
+
+    private void replaceFragment(Fragment fragment){
+
+        FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+        ft.replace(R.id.fragment_container, fragment);
+        ft.addToBackStack("password");
+        //ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        ft.commit();
 
     }
 
