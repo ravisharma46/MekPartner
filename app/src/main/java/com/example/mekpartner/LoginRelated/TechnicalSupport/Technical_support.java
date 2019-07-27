@@ -40,6 +40,7 @@ public class Technical_support extends AppCompatActivity {
         upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
+        //ravi....
         setTabLayout();
     }
 
