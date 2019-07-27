@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/call_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID."
+            android:textSize="14dp"
+            android:textColor="@color/text_heading_booknow"
+            android:fontFamily="@font/montserrat_semi_bold"/>
+
+        <FrameLayout
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="152290722651"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/black"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$3200"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28th July, 2018"
+                android:textSize="10sp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/text_heading_booknow"
+                android:layout_gravity="left"/>
+
+            <RelativeLayout
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/debited_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/imagefrom"
+                    android:layout_toLeftOf="@+id/imagefrom"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="right"
+                    android:text="Debited From"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/text_heading_booknow"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/imagefrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/wallet_xhdpi" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

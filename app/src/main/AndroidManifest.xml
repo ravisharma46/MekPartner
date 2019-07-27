@@ -35,6 +35,22 @@
         <activity android:name=".LoginRelated.Services.RegularServicePartner.ScanQRcode" />
         <activity android:name=".LoginRelated.Services.RegularServicePartner.Ub_PartnerDropOff" />
         <activity android:name=".LoginRelated.Services.RegularServicePartner.ConfirmBookingRs" />
+        <activity android:name=".LoginRelated.Help_And_Support.Disclaimer"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Terms_and_Conditions"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Terms_Of_Use"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Privacy_policy"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Previous_Orders"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Pickup_Confirmed"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Need_help"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Message"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Mek_Legel_Activity"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Help_and_Support"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Faq_activity"/>
+        <activity android:name=".LoginRelated.Help_And_Support.Help"/>
+        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_02"/>
+        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_01"/>
+        <activity android:name=".LoginRelated.AboutUS.AboutUs"/>
+        
         <activity
             android:name=".LoginRelated.NavDrawer.NavActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

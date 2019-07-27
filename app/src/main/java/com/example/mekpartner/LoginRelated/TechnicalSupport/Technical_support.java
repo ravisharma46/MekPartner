@@ -41,6 +41,7 @@ public class Technical_support extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
         //ravi....
+
         setTabLayout();
     }
 

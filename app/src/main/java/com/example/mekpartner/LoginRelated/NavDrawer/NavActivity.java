@@ -26,14 +26,18 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mekpartner.LoginRelated.AboutUS.AboutUs;
 import com.example.mekpartner.LoginRelated.Bookings.History.History;
 import com.example.mekpartner.LoginRelated.Bookings.NewBooking.NewBooking;
 import com.example.mekpartner.LoginRelated.Bookings.OngoingBooking.OngoingBooking;
 import com.example.mekpartner.LoginRelated.Bookings.UpcomingBooking.UpcomingBooking;
+import com.example.mekpartner.LoginRelated.Help_And_Support.Help;
 import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
 import com.example.mekpartner.LoginRelated.ServiceManagement.ServiceManagement;
 import com.example.mekpartner.LoginRelated.SpCabs_More.Spcabs_more;
 import com.example.mekpartner.LoginRelated.TechnicalSupport.Technical_support;
+import com.example.mekpartner.LoginRelated.Transaction_History.Transaction_details_01;
+import com.example.mekpartner.LoginRelated.Transaction_History.Transaction_details_02;
 import com.example.mekpartner.LoginRelated.mekcoins_wallet.MekcoinsWalletActivity;
 import com.example.mekpartner.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -329,15 +333,18 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
                         case 2: //startActivity(new Intent(AppHomePage.this,MekCoinsWallet.class));break;
                             break;
                         case 3:
+                            delay(new Transaction_details_01());
                             //delay(new OrderHistory());
 
                             break;
                         case 4:
                             break;
                         case 5:
+                            delay(new AboutUs());
                            // delay(new AboutUs());
                             break;
                         case 6:
+                            delay(new Help());
                             //delay(new Help());
                             break;
                         case 7: //startActivity(new Intent(AppHomePage.this, OffersHomePage.class));

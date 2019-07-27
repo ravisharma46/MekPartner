@@ -29,6 +29,9 @@
     <string name="petrol_diesel_meter">Petrol/ Diesel Meter</string>
     <string name="message">I aurthorize to execute the jobs described herin using the necessary material cost. I understand that the vehicle is stored, repaired and tested at my own risk</string>
     <string name="serviced_drop_done"><![CDATA[Serviced & Drop Done]]></string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="booking_date_time"><![CDATA[Booking date & time]]></string>
+    <string name="servicedateandTime"><![CDATA[Service date & time]]></string>
     <string-array name="select_battery">
         <item>Oxide</item>
         <item>Exide</item>
