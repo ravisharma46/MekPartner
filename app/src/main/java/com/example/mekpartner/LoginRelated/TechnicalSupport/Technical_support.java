@@ -15,11 +15,8 @@ import android.text.Html;
 import android.view.MenuItem;
 
 import com.example.mekpartner.LoginRelated.NavDrawer.NavActivity;
-import com.example.mekpartner.LoginRelated.ServiceManagement.bike_fragment;
-import com.example.mekpartner.LoginRelated.ServiceManagement.car_management;
-import com.example.mekpartner.LoginRelated.ServiceManagement.sosBike;
-import com.example.mekpartner.LoginRelated.ServiceManagement.sosCar;
-import com.example.mekpartner.LoginRelated.ServiceManagement.sos_cabs_and_more;
+import com.example.mekpartner.LoginRelated.TechnicalSupport.CallsSummary.CallSummaryfragment;
+import com.example.mekpartner.LoginRelated.TechnicalSupport.NewCall.NewCallfragment;
 import com.example.mekpartner.R;
 import com.google.android.material.tabs.TabLayout;
 
