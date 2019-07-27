@@ -33,6 +33,7 @@ import com.example.mekpartner.LoginRelated.Bookings.UpcomingBooking.UpcomingBook
 import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
 import com.example.mekpartner.LoginRelated.ServiceManagement.ServiceManagement;
 import com.example.mekpartner.LoginRelated.TechnicalSupport.Technical_support;
+import com.example.mekpartner.LoginRelated.mekcoins_wallet.MekcoinsWalletActivity;
 import com.example.mekpartner.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -41,6 +42,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 public class NavActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -55,12 +57,9 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
     HashMap<MenuModel, List<MenuModel>> childList = new HashMap<>();
 
     private int lastExpandedPosition = -1;
-    private List<Fragment> mFragmentList;
-
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private ActionBar toolbar;
     private ImageView iv_serviceManagement;
 
 
@@ -69,13 +68,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        mFragmentList = new ArrayList<>();
-//        mFragmentList.add(new UpcomingFragment());
-//        mFragmentList.add(new OngoingFragment());
-//        mFragmentList.add(new BookingHistoryFragment());
-//
-//
-//
 //        mSession  = new LoginSessionManager(getApplicationContext());
 //        mUserInfo = mSession.getUserDetailsFromSP();
 //
@@ -90,12 +82,8 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         Log.e(TAG,"Login successfully");
 
         iv_serviceManagement=findViewById(R.id.iv_sm);
-        iv_serviceManagement.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(NavActivity.this, ServiceManagement.class));
-            }
-        });
+        iv_serviceManagement.setOnClickListener(view -> startActivity(new
+                Intent(NavActivity.this, ServiceManagement.class)));
 
         setNavigationDrawer();
 
@@ -120,7 +108,7 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         adapter.addFragment(new UpcomingBooking(), "Upcoming");
         adapter.addFragment(new OngoingBooking(), "Ongoing");
         adapter.addFragment(new History(), "History");
-         viewPager.setAdapter(adapter);
+        viewPager.setAdapter(adapter);
     }
 
     public static class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -128,9 +116,10 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
-            super(manager);
+            super(manager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         }
 
+        @NonNull
         @Override
         public Fragment getItem(int position) {
             return mFragmentList.get(position);
@@ -155,7 +144,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
 
 
     private  void setBottomNavigation(){
-        toolbar = getSupportActionBar();
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -175,8 +163,7 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
 
             //  return true;
             case R.id.navigation_walet:
-               // startActivity(new Intent(NavActivity.this, OrderHistory.class));
-                // toolbar.setTitle("Profile");
+                startActivity(new Intent(NavActivity.this, MekcoinsWalletActivity.class));
                 return true;
             case R.id.navigation_profile:
                 startActivity(new Intent(NavActivity.this, InitialProfilePage.class));
@@ -185,10 +172,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         }
         return false;
     };
-
-//
-
-
 
     private void setNavigationDrawer(){
 
@@ -223,14 +206,14 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         toggle.syncState();
 
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this::onNavigationItemSelected);
+        navigationView.setNavigationItemSelectedListener(this);
 
         // Set Navigation Header
         View headerView      =  navigationView.getHeaderView(0);
 
         ImageView iv_profile =  headerView.findViewById(R.id.profile_pic);
-        TextView tv_name     =  headerView.findViewById(R.id.name);
-        TextView tv_mobile   =  headerView.findViewById(R.id.mobile);
+//        TextView tv_name     =  headerView.findViewById(R.id.name);
+//        TextView tv_mobile   =  headerView.findViewById(R.id.mobile);
 
         // need to set a profile pic -
         iv_profile.setOnClickListener(v -> {
@@ -379,16 +362,16 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
                     switch (childPosition) {
 
                         case 0:
-                            tabLayout.getTabAt(0).select();
+                            Objects.requireNonNull(tabLayout.getTabAt(0)).select();
                             break;
                         case 1:
-                            tabLayout.getTabAt(1).select();
+                            Objects.requireNonNull(tabLayout.getTabAt(1)).select();
                             break;
                         case 2:
-                            tabLayout.getTabAt(2).select();
+                            Objects.requireNonNull(tabLayout.getTabAt(2)).select();
                             break;
                         case 3:
-                            tabLayout.getTabAt(3).select();
+                            Objects.requireNonNull(tabLayout.getTabAt(3)).select();
                             break;
                     }
                 }
@@ -452,16 +435,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
 //        replaceFragment(new FragmentMainContent());
 //    }
 
-    public void replaceFragment(Fragment fragment) {
-
-        Log.e(TAG, "replaceFragment");
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-       // ft.replace(R.id.homePage, fragment);
-        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        ft.commit();
-    }
-
     public void delay(Activity activity){
         Handler handler = new Handler();
 
@@ -476,13 +449,11 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
 
-        switch (item.getItemId()){
-            case R.id.menu_support:
-                startActivity(new Intent(NavActivity.this, Technical_support.class));
-                return  true;
-            default:
-            return super.onOptionsItemSelected(item);
+        if (item.getItemId() == R.id.menu_support) {
+            startActivity(new Intent(NavActivity.this, Technical_support.class));
+            return true;
         }
+        return super.onOptionsItemSelected(item);
 
     }
 }

@@ -4,29 +4,18 @@ package com.example.mekpartner.LoginRelated.SignUpandLoginFragments;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.example.mekpartner.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -44,7 +33,7 @@ public class FragmentPhone extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mRootView = inflater.inflate(R.layout.fragment_fragment_phone, container, false);
@@ -62,31 +51,23 @@ public class FragmentPhone extends Fragment {
 
     private void clickListener() {
 
-        mRootView.findViewById(R.id.back_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().onBackPressed();
-            }
-        });
+        mRootView.findViewById(R.id.back_btn).setOnClickListener(v -> Objects.requireNonNull(getActivity()).onBackPressed());
 
 
         final TextView tv_pn = mRootView.findViewById(R.id.phone_no);
 
-        mRootView.findViewById(R.id.proceed).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String phone = tv_pn.getText().toString();
+        mRootView.findViewById(R.id.proceed).setOnClickListener(v -> {
+            String phone = tv_pn.getText().toString();
 
-                if (phone.length() < 10) {
-                   // Toast.makeText(getActivity(), "Enter 10-digit mobile number", Toast.LENGTH_SHORT).show();
-                   // return;
-                }
-                //isPartnerRegistered(phone);
+//            if (phone.length() < 10) {
+//               // Toast.makeText(getActivity(), "Enter 10-digit mobile number", Toast.LENGTH_SHORT).show();
+//               // return;
+//            }
+            //isPartnerRegistered(phone);
 
-               // replaceFragment(new FragmentSignUp(),phone);
-                replaceFragment(new FragmentPassword(),phone);
+           // replaceFragment(new FragmentSignUp(),phone);
+            replaceFragment(new FragmentPassword(),phone);
 
-            }
         });
 
     }
