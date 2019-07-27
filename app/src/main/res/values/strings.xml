@@ -32,6 +32,7 @@
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
     <string name="booking_date_time"><![CDATA[Booking date & time]]></string>
     <string name="servicedateandTime"><![CDATA[Service date & time]]></string>
+    <string name="this_amount_is_only_for_the_extra_consumable_part">This amount is only for the extra consumable part</string>
     <string-array name="select_battery">
         <item>Oxide</item>
         <item>Exide</item>

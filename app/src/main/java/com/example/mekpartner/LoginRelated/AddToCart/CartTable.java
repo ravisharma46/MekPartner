@@ -1,4 +1,4 @@
-package com.example.vendorapp.AddToCart;
+package com.example.mekpartner.LoginRelated.AddToCart;
 
 public class CartTable {
 

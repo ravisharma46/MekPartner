@@ -1,4 +1,4 @@
-package com.example.vendorapp.AddToCart;
+package com.example.mekpartner.LoginRelated.AddToCart;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,9 +16,8 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.vendorapp.R;
+import com.example.mekpartner.R;
 
-import static android.database.CursorJoiner.Result.LEFT;
 import static androidx.recyclerview.widget.ItemTouchHelper.ACTION_STATE_SWIPE;
 
 enum ButtonsState {

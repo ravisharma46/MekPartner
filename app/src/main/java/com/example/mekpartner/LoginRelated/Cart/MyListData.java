@@ -1,4 +1,4 @@
-package com.example.vendorapp.A_job_card;
+package com.example.mekpartner.LoginRelated.Cart;
 
 public class MyListData{
     private String description;

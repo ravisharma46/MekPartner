@@ -16,6 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.mekpartner.LoginRelated.Cart.JobCartPartner;
 import com.example.mekpartner.LoginRelated.CustomerReport.ViewCustomerReport;
 import com.example.mekpartner.LoginRelated.Services.SosSP.ForRestService.CustomerDropOff;
 import com.example.mekpartner.R;
@@ -96,6 +97,13 @@ public class ServiceInProgress extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+        fl_addMoreProblem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ServiceInProgress.this, JobCartPartner.class));
             }
         });
     }
