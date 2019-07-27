@@ -92,12 +92,7 @@ public class FragmentSignUp extends Fragment {
     }
     private void clickListener() {
 
-        mRootView.findViewById(R.id.back_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().onBackPressed();
-            }
-        });
+        mRootView.findViewById(R.id.back_btn).setOnClickListener(v -> getActivity().onBackPressed());
 
         final TextView tv_email    = mRootView.findViewById(R.id.email);
         final TextView tv_name     = mRootView.findViewById(R.id.name);
