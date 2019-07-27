@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.example.mekpartner.R;
 
@@ -67,6 +68,24 @@ public class Terms_and_Conditions extends AppCompatActivity {
                 "16. The particular service vendor first checks and confirms whether there is an availability of servicing on provided day or not as well as Service Vendor is capable of giving particular service of that brand or not or Parts & Particulars of that particular service is available with him or not.\n" +
                 "\n" +
                 "17. We will deduct Few coins in your wallet after accepting any service and it will refund to you when you received your weekly payment or settled down in your weekly payment.\n",2));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
 }
