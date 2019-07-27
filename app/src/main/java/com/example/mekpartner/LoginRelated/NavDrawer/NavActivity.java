@@ -32,6 +32,7 @@ import com.example.mekpartner.LoginRelated.Bookings.OngoingBooking.OngoingBookin
 import com.example.mekpartner.LoginRelated.Bookings.UpcomingBooking.UpcomingBooking;
 import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
 import com.example.mekpartner.LoginRelated.ServiceManagement.ServiceManagement;
+import com.example.mekpartner.LoginRelated.SpCabs_More.Spcabs_more;
 import com.example.mekpartner.LoginRelated.TechnicalSupport.Technical_support;
 import com.example.mekpartner.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -169,7 +170,8 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
 //                        Toast.makeText(getApplicationContext(),"Home",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.navigation_location:
-                //toolbar.setTitle("My Gifts");
+                startActivity(new Intent(NavActivity.this, Spcabs_more.class));
+
                 return true;
             // case R.id.navigation_sm:
 
