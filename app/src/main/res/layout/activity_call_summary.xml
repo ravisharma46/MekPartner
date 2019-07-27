@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/frame_rect_02"
+        android:layout_height="54dp">
+        <ImageView
+            android:layout_width="28dp"
+            android:id="@+id/iv_back"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/back_arrow"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Call #123"
+            android:textColor="@color/black"
+            android:layout_marginLeft="48dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Remove"
+            android:layout_gravity="right"
+            android:textColor="@color/chart_deep_red"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_cancel_black_24dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="@drawable/frame_rect_02"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/asset_6mdpi" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/wagonR_petrol"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wagon_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Wagon R "
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/Petrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toEndOf="@+id/wagon_R"
+                        android:layout_toRightOf="@+id/wagon_R"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="(Petrol)"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wagonR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wagonR_petrol"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/offwhite"
+                    android:paddingTop="8dp"
+                    android:text="DL1AB3241"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/car_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wagonR"
+                    android:textColor="@color/offwhite"
+                    android:fontFamily="@font/gotham_book"
+                    android:paddingTop="4dp"
+                    android:text="Automatic"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_below="@id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faults"
+                android:textSize="10sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginLeft="16dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_below="@id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/frame_rect_02"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mechanical Fault"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/yellow2"
+                android:paddingTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:paddingTop="8dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="12dp"
+                    android:text="Describe your problem.."
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/offwhite"
+                    android:background="@drawable/frame_rect_02"
+                    android:gravity="start" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/firstRelative2"
+            android:layout_below="@id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Details"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginLeft="12dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout4"
+            android:layout_below="@id/firstRelative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_rect_02"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/re"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textColor="@color/black"
+                    android:text="Name of the Customer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_weight="3"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mobile_svg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="9864531286"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textSize="13sp"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/green2"
+                    android:text="Connect Customer >>"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
