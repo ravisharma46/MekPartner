@@ -71,7 +71,7 @@ public class Disclaimer extends AppCompatActivity {
 
         spannableString.setSpan(new RelativeSizeSpan(1.3f),0,11,0);
         spannableString.setSpan(new UnderlineSpan(),0,11,0);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD),0,8520,0);
+        spannableString.setSpan(new StyleSpan(Typeface.BOLD),0,disclam.length(),0);
 
 
         disclaimer.setText(spannableString);

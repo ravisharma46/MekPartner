@@ -47,11 +47,11 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("4. This Privacy Policy covers: (i) the type of information collected from the Registered Users (as defined below) through the Platform including sensitive personal data or information; (ii) the purpose, means and modes of usage of such information; and (iii) how and to whom such information which has been collected will be disclosed.",3));
+        list.add(new PrivacyData("4. This Privacy Policy covers: (i) the type of information collected from the Registered Service providers (as defined below) through the Platform including sensitive personal data or information; (ii) the purpose, means and modes of usage of such information; and (iii) how and to whom such information which has been collected will be disclosed.",3));
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("5. For the purpose of this Privacy Policy, wherever the context so requires “Your” or “User” shall mean any natural person who uses the Website for availing Services. The terms “We”, “Us”, “Our” shall mean the Company, its employees, and authorised agents that perform any services on the Company’s behalf.",3));
+        list.add(new PrivacyData("5. For the purpose of this Privacy Policy, wherever the context so requires “Your” or “Service provider” shall mean any natural person who uses the Website for availing Services. The terms “We”, “Us”, “Our” shall mean the Company, its employees, and authorised agents that perform any services on the Company’s behalf.",3));
 
         list.add(new PrivacyData("",000));
 
@@ -61,7 +61,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("1. We are service aggregators and through our Platform, we enable the User(s) to receive car related repairs, services and maintenance and also roadside assistance including quick check-up, key lock- out, car servicing etc.(”Services”), from third party workshops and their authorized personnel, under agreement with Us (“Service Provider”) on a real time basis. These Services are made available to You for Your personal, non-commercial use.",3));
+        list.add(new PrivacyData("1. We are service aggregators and through our Platform, we enable the Service provider(s) to receive car related repairs, services and maintenance and also roadside assistance including quick check-up, key lock- out, car servicing etc.(”Services”), from third party workshops and their authorized personnel, under agreement with Us (“Service Provider”) on a real time basis. These Services are made available to You for Your personal, non-commercial use.",3));
 
         list.add(new PrivacyData("",000));
 
@@ -69,7 +69,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("\n3. Type of information collected from the User(s)\n",2));
+        list.add(new PrivacyData("\n3. Type of information collected from the Service provider(s)\n",2));
 
         list.add(new PrivacyData("",000));
 
@@ -101,11 +101,11 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("3. We require Users who visit the Platform or avail our service through the Platform to provide us with the following information:",3));
+        list.add(new PrivacyData("3. We require Service providers who visit the Platform or avail our service through the Platform to provide us with the following information:",3));
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("i. Name of the User;\n",4));
+        list.add(new PrivacyData("i. Name of the Service providers;\n",4));
 
         list.add(new PrivacyData("ii. E-mail Address;\n",4));
 
@@ -125,7 +125,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("i. User name: The user name shall be used to address the User and to customize the Services availed by the user through the Platform, and to personalize all communications that are sent to the User by Us.",4));
+        list.add(new PrivacyData("i. Service providers name: The Service providers name shall be used to address the Service providers and to customize the Services availed by the Service providers through the Platform, and to personalize all communications that are sent to the Service providers by Us.",4));
 
         list.add(new PrivacyData("",000));
 
@@ -135,7 +135,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("a. Service messages from time to time; and\n",5));
 
-        list.add(new PrivacyData("b. Feedback from the User regarding the Services provided by the Service Provider;\n",5));
+        list.add(new PrivacyData("b. Feedback from the Service providers regarding the Services provided by the Service Provider;\n",5));
 
         list.add(new PrivacyData("c. Marketing emails; and\n",5));
 
@@ -145,11 +145,11 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("3. Credit Card/Debit Card or any other such payment information: Credit Card/Debit Card or any other such payment information is used for charging the User for availing Services through the Platform.",3));
+        list.add(new PrivacyData("3. Credit Card/Debit Card or any other such payment information: Credit Card/Debit Card or any other such payment information is used for charging the Service providers for availing Services through the Platform.",3));
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("4. Vehicle Information: Vehicle Information shall be used to identify the vehicle and provide appropriate Services as requested by the User.",3));
+        list.add(new PrivacyData("4. Vehicle Information: Vehicle Information shall be used to identify the vehicle and provide appropriate Services as requested by the Service providers.",3));
 
         list.add(new PrivacyData("",000));
 
@@ -159,7 +159,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("\n4. Disclosure of Personal Information\n",2));
 
-        list.add(new PrivacyData("1. All financial information that is collected through the Platform is used solely to enable the User to make payments for the Services availed through the Platform, and is not used for marketing or promotional purposes. Towards this end, we disclose such information to a third-party intermediary, for the sole purpose of processing the payments made by the User on the Platform.",3));
+        list.add(new PrivacyData("1. All financial information that is collected through the Platform is used solely to enable the Service providers to make payments for the Services availed through the Platform, and is not used for marketing or promotional purposes. Towards this end, we disclose such information to a third-party intermediary, for the sole purpose of processing the payments made by the Service providers on the Platform.",3));
 
         list.add(new PrivacyData("",000));
 
@@ -167,7 +167,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("3. We reserve the right to disclose any personal information as required by law and when we believe, at our sole discretion that disclosure is necessary to protect our rights, protect someone from injury and/or to comply with a judicial proceeding, court order, or legal process served on our Platform.",3));
+        list.add(new PrivacyData("3. We reserve the right to disclose any personal information as required by law and when we believe, in our sole discretion that disclosure is necessary to protect our rights, protect someone from injury and/or to comply with a judicial proceeding, court order, or legal process served on our Platform.",3));
 
         list.add(new PrivacyData("",000));
 
@@ -193,7 +193,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("",000));
 
-        list.add(new PrivacyData("1. We may provide links to websites for the convenience and information of Users. These websites may not be owned, controlled, or operated by Us. In those cases, We cannot control how information collected by those websites will be used, shared, or secured. If the User visits linked sites, We strongly recommend that the User reviews the privacy notices or policies posted at those sites. We are not responsible for the content of linked sites, the User’s use of them, or the information practices of their operators.\n",3));
+        list.add(new PrivacyData("1. We may provide links to websites for the convenience and information of Service providers. These websites may not be owned, controlled, or operated by Us. In those cases, We cannot control how information collected by those websites will be used, shared, or secured. If the Service providers visits linked sites, We strongly recommend that the Service providers reviews the privacy notices or policies posted at those sites. We are not responsible for the content of linked sites, the Service provider’s use of them, or the information practices of their operators.\n",3));
 
         list.add(new PrivacyData("",000));
 
@@ -223,7 +223,7 @@ public class Privacy_policy extends AppCompatActivity {
 
         list.add(new PrivacyData("\n9. Choice/Opt-Out\n",2));
 
-        list.add(new PrivacyData("1. If the User wishes to opt- out of receiving non-essential (promotional, marketing-related) communications from Us, after setting up an account, they may choose to do so. Further, if a User wishes to remove all their contact information from the Platform, they can do so by opting out of the Platform and uninstalling the Platform.\n",3));
+        list.add(new PrivacyData("1. If the Service provider wishes to opt- out of receiving non-essential (promotional, marketing-related) communications from Us, after setting up an account, they may choose to do so. Further, if a Service provider wishes to remove all their contact information from the Platform, they can do so by opting out of the Platform and uninstalling the Platform.\n",3));
 
         list.add(new PrivacyData("",000));
 
