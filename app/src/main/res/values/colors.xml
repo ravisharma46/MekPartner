@@ -95,10 +95,12 @@
 
     <!--home page-->
 
-
-
-
-
+    <!--aman colours-->
+    <color name="gray97">#F7F7F7</color>
+    <color name="crimson">#DC143C</color>
+    <color name="alto">#D8D8D8</color>
+    <color name="silver_chalice">#A5A5A5</color>
+    <color name="scorpion">#695F62</color>
 
 </resources>
 

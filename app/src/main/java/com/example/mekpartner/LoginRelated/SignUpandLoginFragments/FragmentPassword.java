@@ -1,23 +1,21 @@
 package com.example.mekpartner.LoginRelated.SignUpandLoginFragments;
 
 
-import android.app.NativeActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.mekpartner.LoginRelated.NavDrawer.NavActivity;
-import com.example.mekpartner.LoginRelated.ProfileRelated.InitialProfilePage;
 import com.example.mekpartner.R;
+
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,7 +36,7 @@ public class FragmentPassword extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
@@ -62,16 +60,9 @@ public class FragmentPassword extends Fragment {
     }
     private void clickListener() {
 
-        mRootView.findViewById(R.id.back_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().onBackPressed();
-            }
-        });
+        mRootView.findViewById(R.id.back_btn).setOnClickListener(v -> Objects.requireNonNull(getActivity()).onBackPressed());
 
-        mRootView.findViewById(R.id.login_to_app).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mRootView.findViewById(R.id.login_to_app).setOnClickListener(v -> {
 
 //                TextView tv_pass = mRootView.findViewById(R.id.password);
 //                String pass = tv_pass.getText().toString().trim();
@@ -83,11 +74,10 @@ public class FragmentPassword extends Fragment {
 //
 //                TextView tv_phone = mRootView.findViewById(R.id.phone_no);
 //                String phone = tv_phone.getText().toString().trim();
-                //loginToApp(phone,pass);
+            //loginToApp(phone,pass);
 
-                startActivity(new Intent(getActivity(), NavActivity.class));
-                getActivity().finish();
-            }
+            startActivity(new Intent(getActivity(), NavActivity.class));
+            Objects.requireNonNull(getActivity()).finish();
         });
 
 
