@@ -29,6 +29,7 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 
 		toolbar.setTitle("Mekcoins Wallet");
 		toolbar.setTitleTextAppearance(getApplicationContext(), R.style.custom_toolbar_style);
+		toolbar.setNavigationOnClickListener(view -> onBackPressed());
 
 		Button statement = findViewById(R.id.btn_statement);
 

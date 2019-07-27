@@ -51,6 +51,7 @@ public class FragmentMekcoinsWalletStatement extends Fragment {
 
 		toolbar = Objects.requireNonNull(getActivity()).findViewById(R.id.toolbar_widget);
 		toolbar.setTitle("Mekcoins Statement");
+
 		wallethistoryview = v.findViewById(R.id.wallet_history_recycler_view);
 
 		wallethistoryview.hasFixedSize();
