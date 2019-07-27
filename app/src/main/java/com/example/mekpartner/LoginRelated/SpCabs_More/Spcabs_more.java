@@ -1,4 +1,4 @@
-package com.example.mekpartner.LoginRelated.TechnicalSupport;
+package com.example.mekpartner.LoginRelated.SpCabs_More;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -15,15 +15,16 @@ import android.text.Html;
 import android.view.MenuItem;
 
 import com.example.mekpartner.LoginRelated.NavDrawer.NavActivity;
-import com.example.mekpartner.LoginRelated.TechnicalSupport.CallsSummary.CallSummaryfragment;
-import com.example.mekpartner.LoginRelated.TechnicalSupport.NewCall.NewCallfragment;
+import com.example.mekpartner.LoginRelated.SpCabs_More.History.History_sp_fragment;
+import com.example.mekpartner.LoginRelated.SpCabs_More.NewBooking.New_sp_fragment;
+import com.example.mekpartner.LoginRelated.SpCabs_More.UpcomingBooking.Upcoming_sp_fragment;
 import com.example.mekpartner.R;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Technical_support extends AppCompatActivity {
+public class Spcabs_more extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -31,16 +32,15 @@ public class Technical_support extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_technical_support);
+        setContentView(R.layout.activity_spcabs_more);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
-        getSupportActionBar().setTitle(Html.fromHtml("<font color='#000000'>Technical support</font>"));
+        getSupportActionBar().setTitle(Html.fromHtml("<font color='#000000'>Cabs & More</font>"));
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
-        //ravi....
 
         setTabLayout();
     }
@@ -58,8 +58,9 @@ public class Technical_support extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         NavActivity.ViewPagerAdapter adapter = new NavActivity.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new NewCallfragment(), "New Calls");
-        adapter.addFragment(new CallSummaryfragment(), "Call Summary");
+        adapter.addFragment(new New_sp_fragment(), "New");
+        adapter.addFragment(new Upcoming_sp_fragment(), "Upcoming");
+        adapter.addFragment(new History_sp_fragment(), "History");
         viewPager.setAdapter(adapter);
     }
 

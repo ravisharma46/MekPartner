@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cv_details"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#A5A5A5"
+                        android:fontFamily="@font/gotham_book_regular"
+                        android:paddingTop="10dp"
+                        android:textSize="10sp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="16dp"
+                        android:text="28th July, 2018"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:background="#A5A5A5"
+                        android:fontFamily="@font/gotham_book_regular"
+                        android:gravity="right"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="16dp"
+                        android:text="10:30 a.m"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/order_id_2"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gotham_book_regular"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:textSize="12sp"
+                        android:text="#123"
+                        android:textColor="@android:color/black" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/tick"
+                            android:layout_height="8dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:src="@drawable/arrow_rounded"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="50dp"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+
+                            android:src="@drawable/green_dot" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="68dp"
+                            android:layout_marginLeft="20dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/vertical_line_asset_6xhdpi" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:src="@drawable/ic_assest_7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="13dp">
+
+                            <TextView
+                                android:id="@+id/car_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:textSize="12sp"
+                                android:text="Geeta Colony, New Delhi"
+                                android:textColor="#5B5B5B" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/montserrat_semi_bold"
+                                    android:textSize="12sp"
+                                    android:text="One Way"
+                                    android:textColor="@color/orange"
+                                    android:paddingRight="16dp" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:textSize="10sp"
+                                android:textColor="@color/orange"
+                                android:text="Distance 110 km"
+                                android:paddingRight="16dp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/indica_car"
+                                    android:paddingRight="16dp"
+                                    android:layout_gravity="right"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="13dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_destination"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:textSize="12sp"
+                                android:text="Agra"
+                                android:textColor="#5B5B5B" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/montserrat_semi_bold"
+                                    android:textSize="10sp"
+                                    android:text="Mini"
+                                    android:paddingRight="30dp" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#F5F5F5" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Accept"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_coin"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@id/text3"
+                            android:text="(3 coins)"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingBottom="4dp"
+                            android:paddingRight="4dp"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:layout_alignRight="@id/text3" />
+
+                    </RelativeLayout>
+
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:background="@drawable/mybutton_grey"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Reject"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#000000" />
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reasonImg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/car"
+            android:background="@drawable/circle_border" />
+
+    </FrameLayout>
+
+</FrameLayout>
