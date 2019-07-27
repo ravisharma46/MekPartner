@@ -1,11 +1,16 @@
 package com.example.mekpartner.LoginRelated.mekcoins_wallet;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
@@ -15,6 +20,7 @@ import com.example.mekpartner.R;
 
 public class MekcoinsWalletActivity extends AppCompatActivity {
 
+	String promocode="";
 	String prevbtnId = "";
 	int prevresId = -1;
 
@@ -29,6 +35,7 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 
 		toolbar.setTitle("Mekcoins Wallet");
 		toolbar.setTitleTextAppearance(getApplicationContext(), R.style.custom_toolbar_style);
+		toolbar.setNavigationOnClickListener(view -> onBackPressed());
 
 		Button statement = findViewById(R.id.btn_statement);
 
@@ -92,4 +99,24 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 		prevbtnId = "";
 	}
 
+	public void enterPromocode(View view) {
+		final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+		LayoutInflater layoutInflater = getLayoutInflater();
+		View dialogView = layoutInflater.inflate(R.layout.dialog_wallet_promocode, null);
+		final EditText promoText = dialogView.findViewById(R.id.et_promocode);
+		Button applyPromo = dialogView.findViewById(R.id.btn_promo_apply);
+
+		promocode = promoText.getText().toString();
+		applyPromo.setOnClickListener(view1 -> alertDialog.dismiss());
+
+		alertDialog.setView(dialogView);
+		alertDialog.setCancelable(false);
+		alertDialog.setOnKeyListener((arg0, keyCode, event) -> {
+			if (keyCode == KeyEvent.KEYCODE_BACK) {
+				alertDialog.dismiss();
+			}
+			return true;
+		});
+		alertDialog.show();
+	}
 }

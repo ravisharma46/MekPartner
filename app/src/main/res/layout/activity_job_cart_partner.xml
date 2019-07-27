@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRelated.Cart.JobCartPartner">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/app_grey_headline_caption"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="16dp"
+            android:text="Select Service type"
+            android:layout_height="wrap_content" />
+
+
+        <TableLayout
+            android:id="@+id/tabs_car_services"
+            style="@style/MyCustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabIndicatorColor="@null"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="6dp"
+            app:tabPaddingStart="8dp" />
+
+        <FrameLayout
+            android:id="@+id/fragment_Frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/fragment_general"/>
+
+        </FrameLayout>
+
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/date"
+                android:text="Any consumable part to be added"
+                android:padding="16dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:id="@+id/time"
+                android:padding="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/app_grey_headline_caption"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="16dp"
+            android:text="Enter Details"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="14sp"
+                android:hint="Describe your problem,,"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="top"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/app_grey_headline_caption"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="16dp"
+            android:text="Enter quoted price"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:paddingHorizontal="16dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="500"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_info_outline_black_24dp"/>
+
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/app_grey_headline_caption"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_gravity="center"
+                android:text="@string/this_amount_is_only_for_the_extra_consumable_part"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="left|center"
+                android:textColor="@color/app_caption_dark_grey"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Add the image of the problems"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/camera_dummy"
+                    android:layout_height="36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="24dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/orange"
+                    android:text="Add more pics"
+                    android:layout_height="wrap_content" />
+
+
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="152dp"
+            android:layout_marginHorizontal="16dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/frame_sqr"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_cancel"
+                            android:paddingBottom="8dp"
+                            android:layout_margin="4dp"
+                            android:paddingLeft="8dp"
+                            android:layout_gravity="right"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/image_svg"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="80dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/frame_sqr"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_cancel"
+                            android:paddingBottom="8dp"
+                            android:layout_margin="4dp"
+                            android:paddingLeft="8dp"
+                            android:layout_gravity="right"
+                            android:layout_height="wrap_content" />
+
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/image_svg"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="80dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/frame_sqr"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_cancel"
+                            android:paddingBottom="8dp"
+                            android:layout_margin="4dp"
+                            android:paddingLeft="8dp"
+                            android:layout_gravity="right"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/image_svg"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="80dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/frame_sqr"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_cancel"
+                            android:paddingBottom="8dp"
+                            android:layout_margin="4dp"
+                            android:paddingLeft="8dp"
+                            android:layout_gravity="right"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/image_svg"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="80dp" />
+
+                    </FrameLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="84dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/pay"
+                android:background="@drawable/done_red_button"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Add to Job Card"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

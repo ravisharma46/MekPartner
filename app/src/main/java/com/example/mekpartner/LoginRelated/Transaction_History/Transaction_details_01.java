@@ -1,6 +1,8 @@
 package com.example.mekpartner.LoginRelated.Transaction_History;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,6 +17,7 @@ public class Transaction_details_01 extends AppCompatActivity {
 
     private RecyclerView mrecyclerView;
     private RecyclerView.Adapter madapter;
+    private ImageView iv_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,16 @@ public class Transaction_details_01 extends AppCompatActivity {
 
         madapter = new TransactionAdapter(this,list);
         mrecyclerView.setAdapter(madapter);
+
+        iv_back=findViewById(R.id.iv_back);
+
+        iv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
     }
 
     private ArrayList<TransactionData> initCarData(){

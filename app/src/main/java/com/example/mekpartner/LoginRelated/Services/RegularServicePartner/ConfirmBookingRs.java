@@ -37,8 +37,8 @@ public class ConfirmBookingRs extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
         getSupportActionBar().setTitle(Html.fromHtml("<font color='#000000'>New Booking</font>"));
-        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp);
-        upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp, null);
+        upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red, null), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
         ll_availdelivery=findViewById(R.id.ll_availdelivery);
