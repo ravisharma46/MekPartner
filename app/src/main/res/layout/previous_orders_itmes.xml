@@ -278,10 +278,9 @@
             android:id="@+id/reasonImg"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:layout_marginTop="8dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/circle_border"
-            android:src="@drawable/dentingpainting" />
+            android:src="@drawable/denting_painting" />
 
     </FrameLayout>
 
