@@ -1,21 +1,17 @@
-package com.example.vendorapp.AddToCart;
+package com.example.mekpartner.LoginRelated.AddToCart;
 
 
-import android.content.Intent;
 import android.graphics.Canvas;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-import com.example.vendorapp.R;
+import com.example.mekpartner.R;
 
 import java.util.ArrayList;
 import java.util.List;

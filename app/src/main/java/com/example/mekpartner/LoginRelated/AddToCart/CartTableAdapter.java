@@ -1,4 +1,4 @@
-package com.example.vendorapp.AddToCart;
+package com.example.mekpartner.LoginRelated.AddToCart;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-import com.example.vendorapp.R;
+import com.example.mekpartner.R;
 
 import java.util.List;
 
@@ -43,10 +42,10 @@ public class CartTableAdapter extends RecyclerView.Adapter<CartTableAdapter.Cart
         holder.iv_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               int count    = Integer.parseInt(holder.tv_count.getText().toString().trim());
-               count++;
-               holder.tv_count.setText(""+count);
-               holder.tv_subTotal.setText(""+count*subTotal);
+                int count    = Integer.parseInt(holder.tv_count.getText().toString().trim());
+                count++;
+                holder.tv_count.setText(""+count);
+                holder.tv_subTotal.setText(""+count*subTotal);
 
             }
         });
