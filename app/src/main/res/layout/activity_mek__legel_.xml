@@ -65,22 +65,6 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp" />
         <TextView
-            android:id="@+id/cancellation_and_refunds"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cancellation and Refunds"
-            android:paddingLeft="45dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/montserrat_medium"
-            android:drawableRight="@drawable/new_right_arrow"
-            android:textSize="15sp"
-            android:paddingRight="15dp"
-            android:clickable="true"
-            android:background="@drawable/layout_backgrd"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
-
-        <TextView
             android:id="@+id/disclaimer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
