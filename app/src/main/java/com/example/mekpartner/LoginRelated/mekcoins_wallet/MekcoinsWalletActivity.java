@@ -1,5 +1,6 @@
 package com.example.mekpartner.LoginRelated.mekcoins_wallet;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.mekpartner.R;
 
+import java.util.Objects;
+
 public class MekcoinsWalletActivity extends AppCompatActivity {
 
 	String promocode="";
@@ -25,6 +28,7 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 	int prevresId = -1;
 
 	Toolbar toolbar;
+	EditText etEnterPromoText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_mekcoins_wallet);
 
 		toolbar = findViewById(R.id.toolbar_widget);
+		etEnterPromoText = findViewById(R.id.et_enter_promo_code);
 
 		toolbar.setTitle("Mekcoins Wallet");
 		toolbar.setTitleTextAppearance(getApplicationContext(), R.style.custom_toolbar_style);
@@ -118,5 +123,17 @@ public class MekcoinsWalletActivity extends AppCompatActivity {
 			return true;
 		});
 		alertDialog.show();
+	}
+
+	@SuppressLint("SetTextI18n")
+	public void setPromoText(View view) {
+		String btnId = getResources().getResourceEntryName(view.getId());
+		if (Objects.equals(btnId, "btn_100")) {
+			etEnterPromoText.setText("100");
+		} else if (Objects.equals(btnId, "btn_200")) {
+			etEnterPromoText.setText("200");
+		} else {
+			etEnterPromoText.setText("500");
+		}
 	}
 }

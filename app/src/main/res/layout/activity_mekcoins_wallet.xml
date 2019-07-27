@@ -61,6 +61,7 @@
 			android:gravity="bottom">
 
 			<EditText
+				android:id="@+id/et_enter_promo_code"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:fontFamily="@font/gotham_medium"
@@ -98,11 +99,13 @@
 			android:weightSum="3">
 
 			<Button
+				android:id="@+id/btn_100"
 				style="?attr/buttonBarButtonStyle"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="8dp"
 				android:layout_weight="1"
+				android:onClick="setPromoText"
 				android:textColor="@android:color/black"
 				android:background="@drawable/border_button"
 				android:fontFamily="@font/montserrat_medium"
@@ -110,11 +113,13 @@
 				android:textSize="14sp" />
 
 			<Button
+				android:id="@+id/btn_200"
 				style="?attr/buttonBarButtonStyle"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="8dp"
 				android:layout_weight="1"
+				android:onClick="setPromoText"
 				android:textColor="@android:color/black"
 				android:background="@drawable/border_button"
 				android:fontFamily="@font/montserrat_medium"
@@ -122,11 +127,13 @@
 				android:textSize="14sp" />
 
 			<Button
+				android:id="@+id/btn_500"
 				style="?attr/buttonBarButtonStyle"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="8dp"
 				android:layout_weight="1"
+				android:onClick="setPromoText"
 				android:background="@drawable/border_button"
 				android:fontFamily="@font/montserrat_medium"
 				android:text="500"
