@@ -52,7 +52,7 @@ public class Previous_Orders extends AppCompatActivity {
 
         ArrayList<PreviousOrdersData> list = new ArrayList<>();
 
-        list.add(new PreviousOrdersData("Wagonar R","DL1PB3201","Denting Painting","Service Completed",R.drawable.suzuki_logo,R.drawable.dentingpainting));
+        list.add(new PreviousOrdersData("Wagonar R","DL1PB3201","Denting Painting","Service Completed",R.drawable.suzuki_logo,R.drawable.denting_painting));
         list.add(new PreviousOrdersData("Audi","DL1PB3201","Car Wash","Service Completed",R.drawable.audi,R.drawable.flat_tyre));
         list.add(new PreviousOrdersData("Audi","DL1PB3201","Flat Tyre","Service Cancelled",R.drawable.audi,R.drawable.flat_tyre));
 
