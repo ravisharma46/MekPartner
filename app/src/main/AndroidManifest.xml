@@ -48,7 +48,9 @@
         <activity android:name=".LoginRelated.Help_And_Support.Faq_activity"/>
         <activity android:name=".LoginRelated.Help_And_Support.Help"/>
         <activity android:name=".LoginRelated.Transaction_History.Transaction_details_02"/>
-        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_01"/>
+        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_01"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity android:name=".LoginRelated.AboutUS.AboutUs"/>
         
         <activity
