@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginRelated.TechnicalSupport.Technical_support"></activity>
+        <activity android:name=".LoginRelated.TechnicalSupport.CallsSummary.CallSummaryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            ></activity>
+        <activity android:name=".LoginRelated.TechnicalSupport.Technical_support" />
         <activity
             android:name=".LoginRelated.ServiceManagement.ServiceManagement"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
