@@ -196,6 +196,7 @@
                                 android:layout_gravity="right|center"
                                 android:fontFamily="@font/montserrat_semi_bold"
                                 android:textSize="10sp"
+                                android:textColor="@color/orange"
                                 android:text="Distance 110 km"
                                 android:paddingRight="16dp" />
 
