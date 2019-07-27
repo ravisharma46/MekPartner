@@ -78,9 +78,10 @@
 				android:layout_marginHorizontal="16dp"
 				android:clickable="true"
 				android:focusable="true"
-				android:textColor="@color/mek_grey"
+				android:textColor="@color/text_color"
 				android:fontFamily="@font/gotham_book"
 				android:gravity="end|bottom"
+				android:onClick="enterPromocode"
 				android:paddingBottom="16dp"
 				android:text="Promocode?"
 				android:textSize="10sp" />
