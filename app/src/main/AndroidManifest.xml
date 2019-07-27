@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginRelated.TechnicalSupport.CallsSummary.CallSummaryActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            ></activity>
+        <activity android:name=".LoginRelated.SpCabs_More.History.HistorySpShowDetails"></activity>
+        <activity android:name=".LoginRelated.SpCabs_More.UpcomingBooking.UpcomigBookingDetailSp" />
+        <activity android:name=".LoginRelated.SpCabs_More.NewBooking.AcceptNewBooking" />
+        <activity android:name=".LoginRelated.SpCabs_More.Spcabs_more" />
+        <activity
+            android:name=".LoginRelated.TechnicalSupport.CallsSummary.CallSummaryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".LoginRelated.TechnicalSupport.Technical_support" />
         <activity
             android:name=".LoginRelated.ServiceManagement.ServiceManagement"
