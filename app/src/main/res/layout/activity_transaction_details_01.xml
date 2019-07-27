@@ -7,6 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".LoginRelated.Transaction_History.Transaction_details_01">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/chart_deep_red"
+        android:layout_height="54dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_back"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:src="@drawable/arrow_back_white"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Transaction details"
+            android:textSize="18sp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="48dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_titleimage"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:paddingRight="16dp"
+            android:textAllCaps="false"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
     <LinearLayout
         android:padding="16dp"
         android:background="@color/chart_deep_red"
