@@ -13,6 +13,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:id="@+id/frame_1"
+        android:layout_alignParentTop="true"
         android:background="@color/orange">
 
         <TextView
@@ -30,18 +32,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_below="@+id/frame1"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:orientation="vertical">
@@ -171,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:orientation="vertical"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -341,61 +340,56 @@
 
                 </FrameLayout>
 
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/frame_rect_02"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-               >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_height="40dp"
-                        android:paddingRight="54dp"
-                        android:paddingLeft="54dp"
-                        android:id="@+id/bt_report_view"
-                        android:background="@drawable/grey_button"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="View Customer Report"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white" />
-                </FrameLayout>
-
-
-
                 <Button
-                    android:id="@+id/bt_serviceComplete"
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="@drawable/done_red_button"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:paddingRight="54dp"
+                    android:layout_marginBottom="100dp"
+                    android:paddingLeft="54dp"
+                    android:id="@+id/bt_report_view"
+                    android:background="@drawable/grey_button"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Service Completed"
+                    android:text="View Customer Report"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
-
-
-        </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:id="@+id/ll1"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frame_rect_02"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/bt_serviceComplete"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/done_red_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Service Completed"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>

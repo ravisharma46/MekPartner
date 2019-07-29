@@ -26,8 +26,9 @@
 			android:layout_gravity="end"
 			android:fontFamily="@font/montserrat_medium"
 			android:gravity="center"
-			android:text="FAQs"
-			android:textSize="12sp" />
+			android:textAllCaps="false"
+			android:text="Reddeme code"
+			android:textSize="10sp" />
 	</androidx.appcompat.widget.Toolbar>
 
 </RelativeLayout>
