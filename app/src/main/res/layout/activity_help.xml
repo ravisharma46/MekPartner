@@ -216,10 +216,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="left"
-                                        android:paddingTop="12dp"
-                                        android:paddingBottom="12dp"
                                         android:fontFamily="@font/montserrat_medium"
                                         android:paddingLeft="48dp"
+                                        android:paddingTop="12dp"
+                                        android:paddingBottom="12dp"
                                         android:text="Service in Progress"
                                         android:textColor="@color/yellow"
                                         android:textSize="14sp" />
@@ -335,13 +335,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gotham_medium"
-                            android:paddingLeft="32dp"
-                            android:paddingRight="24dp"
+                            android:paddingStart="32dp"
+                            android:paddingEnd="24dp"
                             android:paddingTop="24dp"
                             android:paddingBottom="24dp"
                             android:textSize="12sp"
                             android:text="Have Issue with previous order ?"
-                            android:drawableRight="@drawable/new_right_arrow"/>
+                            android:drawableEnd="@drawable/new_right_arrow"/>
 
                     </FrameLayout>
 
@@ -354,13 +354,13 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:paddingLeft="16dp"
+                    android:paddingStart="16dp"
                     android:paddingBottom="32dp"
                     android:paddingTop="32dp"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:paddingLeft="16dp"
+                        android:paddingStart="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Help with other queries !"
@@ -383,7 +383,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:clickable="true"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:focusable="true">
 
                         <TextView
                             android:id="@+id/btn_faqs"
@@ -404,9 +405,7 @@
                             android:drawableEnd="@drawable/new_right_arrow"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:textAllCaps="false"
-                            android:text="Mek FAQ's"
-                            android:drawableLeft="@drawable/ic_faqs"
-                            android:drawableRight="@drawable/new_right_arrow" />
+                            android:text="Mek FAQ's" />
 
 
                     </LinearLayout>
@@ -419,7 +418,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:clickable="true"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:focusable="true">
 
                         <TextView
                             android:id="@+id/btn_MekLegal"
@@ -439,9 +439,7 @@
                             android:drawableEnd="@drawable/new_right_arrow"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:textAllCaps="false"
-                            android:text="Mek Legal"
-                            android:drawableLeft="@drawable/legal"
-                            android:drawableRight="@drawable/new_right_arrow" />
+                            android:text="Mek Legal" />
 
                     </LinearLayout>
 
@@ -453,7 +451,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:clickable="true">
+                        android:clickable="true"
+                        android:focusable="true">
 
                         <TextView
                             android:id="@+id/btn_Mek_general_queries"
@@ -473,9 +472,7 @@
                             android:drawableEnd="@drawable/new_right_arrow"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:textAllCaps="false"
-                            android:text="Mek GENERAL QUERIES"
-                            android:drawableLeft="@drawable/ic_feedback"
-                            android:drawableRight="@drawable/new_right_arrow" />
+                            android:text="Mek GENERAL QUERIES" />
 
                     </LinearLayout>
 
