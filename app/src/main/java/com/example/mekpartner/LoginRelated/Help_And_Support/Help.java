@@ -35,6 +35,15 @@ public class Help extends AppCompatActivity {
         btn_MekLegal = findViewById(R.id.btn_MekLegal);
         previousOrder = findViewById(R.id.previousOrder);
 
+        btn_Mek_general_queries.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent queriesIntent = new Intent(Help.this,General_Queries.class);
+                startActivity(queriesIntent);
+            }
+        });
+
         previousOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
