@@ -77,6 +77,20 @@ public class ServiceManagement extends AppCompatActivity {
         setupViewPager(viewPager);
 
         tabLayout = findViewById(R.id.tabs);
+        for (int i = 0; i < title.length; i++) {
+            View view = getLayoutInflater().inflate(R.layout.customtabviewservice, null);
+
+            TextView tv = view.findViewById(R.id.tab_title);
+            tv.setText(title[i]);
+
+
+
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+
+            if (tab != null)
+                tab.setCustomView(view);//set custom view
+        }
+
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
