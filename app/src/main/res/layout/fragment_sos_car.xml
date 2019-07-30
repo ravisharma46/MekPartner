@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -95,18 +95,19 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/gotham_book"
-                        android:textColor="@color/black"
+                        android:textColor="@color/offwhite"
                         android:text="Service Details"
                         android:paddingLeft="16dp"
                         android:layout_gravity="left"/>
 
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         android:layout_width="wrap_content"
+                        android:textColor="@color/offwhite"
                         android:layout_height="wrap_content"
                         android:text="Availability"
                         android:paddingLeft="16dp"
@@ -132,7 +133,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/flattyre"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -175,7 +176,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/battery_jumpstart"
                             android:gravity="start"
                             android:focusable="true"
@@ -218,7 +219,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/key_recovery"
                             android:gravity="start"
                             android:focusable="true"
@@ -261,7 +262,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/towing"
                             android:gravity="start"
                             android:focusable="true"
@@ -304,7 +305,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/emergency_fuel"
                             android:gravity="start"
                             android:focusable="true"
@@ -347,7 +348,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/onsite_assistance"
                             android:gravity="start"
                             android:focusable="true"
@@ -383,18 +384,6 @@
                 </LinearLayout>
 
 
-                <Button
-                    android:id="@+id/bt_done"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/done_red_button"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Done"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
 
             </LinearLayout>
 
@@ -403,5 +392,25 @@
 
     </ScrollView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_1"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <Button
+            android:id="@+id/bt_done"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/done_red_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
