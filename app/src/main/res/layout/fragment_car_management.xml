@@ -25,6 +25,7 @@
                 android:background="@drawable/gradient_bottom"
                 android:scaleY=".5" />
 
+            <!--Available to all services -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,6 +87,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_height="match_parent">
 
+                <!--service details-->
 
                 <FrameLayout
                     android:layout_marginTop="8dp"
@@ -112,6 +114,7 @@
                         android:paddingRight="24dp"
                         android:layout_gravity="right"/>
                 </FrameLayout>
+
 
                 <!--general servies-->
                 <LinearLayout
@@ -147,7 +150,7 @@
                             android:drawableLeft="@drawable/generl_services" />
 
                         <TextView
-                            android:id="@+id/btn_details"
+                            android:id="@+id/btn_gen_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -165,6 +168,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/generalDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -305,6 +309,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--Reparing -->
 
                 <LinearLayout
@@ -339,7 +345,7 @@
                             android:drawableLeft="@drawable/reparing" />
 
                         <TextView
-                            android:id="@+id/btn_general_services_details"
+                            android:id="@+id/btn_reparing_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -357,6 +363,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/reparingDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -744,6 +751,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--WHEEL CARING-->
 
                 <LinearLayout
@@ -778,7 +787,7 @@
                             android:drawableLeft="@drawable/wheel_caring" />
 
                         <TextView
-                            android:id="@+id/btn_wheel_care_services_details"
+                            android:id="@+id/btn_wheel_care_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -795,41 +804,46 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/wheelcareDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_allignmentxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_allignmentxhdpi"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL ALIGNMENT"
-                                android:drawableLeft="@drawable/wheel_allignmentxhdpi" />
+                                android:text="Wheel Alignment" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -842,36 +856,39 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_balancingxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_balancingxhdpi"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL BALANCING"
-                                android:drawableLeft="@drawable/wheel_balancingxhdpi" />
+                                android:text="Wheel Balancing" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:id="@+id/wheel_standard_services"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -884,39 +901,39 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:weightSum="2"
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_allignment_and_balancingxhdpi"/>
+
                             <TextView
-                                android:layout_weight="0.5"
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_allignment_and_balancingxhdpi"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL ALIGNMENT AND BALANCING"
-                                android:drawableLeft="@drawable/wheel_allignment_and_balancingxhdpi" />
+                                android:text="Wheel Alignment And Balancing" />
 
                             <FrameLayout
-                                android:layout_weight="1.5"
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:id="@+id/wheel_comprehensive_services"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -929,35 +946,39 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/tyre_replacementxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/tyre_replacementxhdpi"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="TYRE REPLACEMENT"
-                                android:drawableLeft="@drawable/tyre_replacementxhdpi" />
+                                android:text="Tyre Replacement" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -974,6 +995,8 @@
 
 
                 </LinearLayout>
+
+
 
                 <!--Denting Painting-->
 
@@ -1027,6 +1050,8 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/dentingPentingDetails"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1773,6 +1798,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--car care-->
 
                 <LinearLayout
@@ -1824,6 +1851,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/carcareDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -2081,6 +2109,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--Others-->
 
                 <LinearLayout
@@ -2098,7 +2128,6 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/btn_others"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -2134,6 +2163,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/otherDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -2229,6 +2259,8 @@
 
 
                 </LinearLayout>
+
+                <!--Done Button -->
 
                 <Button
                     android:id="@+id/bt_done"

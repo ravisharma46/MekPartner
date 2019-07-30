@@ -81,6 +81,8 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
 
     }
 
+
+
     @Override
     public int getItemCount() {
         return faqData.size();
