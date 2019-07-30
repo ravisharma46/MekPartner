@@ -45,17 +45,18 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
+            android:background="@drawable/frame_rect_02"
             android:layout_height="wrap_content">
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
+                style="@style/MyCustomTabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabBackground="@color/white"
-                app:tabTextAppearance="@style/tab_text"
-                app:tabSelectedTextColor="@color/red_dark"
-                app:tabIndicatorColor="@color/chart_deep_red"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabIndicatorColor="@null"
                 app:tabMode="scrollable"
-                app:tabGravity="fill"/>
+                app:tabPaddingEnd="6dp"
+                app:tabPaddingStart="8dp" />
         </com.google.android.material.appbar.AppBarLayout>
 
         <FrameLayout
