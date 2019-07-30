@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,7 @@ public class car_management extends Fragment {
     private TextView btn_general_Details, btn_repaing_details, btn_denting_panting, btn_car_care, btn_others,btn_Wheel_care;
     private LinearLayout general, reparing, car_care, dentingpainting, others, wheelcare;
     private boolean isExpand = false;
+    private ScrollView mscrollView;
 
     public car_management() {
         // Required empty public constructor
@@ -48,6 +50,8 @@ public class car_management extends Fragment {
         others = v.findViewById(R.id.otherDetails);
         wheelcare = v.findViewById(R.id.wheelcareDetails);
 
+        mscrollView=v.findViewById(R.id.sc_scrollView);
+
         btn_general_Details.setOnClickListener(view -> {
 
             if(!isExpand){
@@ -57,6 +61,7 @@ public class car_management extends Fragment {
                 general.setVisibility(View.GONE);
                 isExpand = false;
             }
+            mscrollView.fullScroll(View.FOCUS_DOWN);
 
         });
 
@@ -69,6 +74,7 @@ public class car_management extends Fragment {
                 car_care.setVisibility(View.GONE);
                 isExpand = false;
             }
+            mscrollView.fullScroll(View.FOCUS_DOWN);
 
         });
 
@@ -81,6 +87,7 @@ public class car_management extends Fragment {
                 others.setVisibility(View.GONE);
                 isExpand = false;
             }
+            mscrollView.fullScroll(View.FOCUS_DOWN);
 
         });
 
@@ -93,6 +100,7 @@ public class car_management extends Fragment {
                 reparing.setVisibility(View.GONE);
                 isExpand = false;
             }
+            mscrollView.fullScroll(View.FOCUS_DOWN);
 
         });
 
@@ -105,6 +113,7 @@ public class car_management extends Fragment {
                 dentingpainting.setVisibility(View.GONE);
                 isExpand = false;
             }
+            mscrollView.fullScroll(View.FOCUS_DOWN);
 
         });
 
@@ -118,7 +127,9 @@ public class car_management extends Fragment {
                 isExpand = false;
             }
 
+            mscrollView.fullScroll(View.FOCUS_DOWN);
         });
+
 
 
 
