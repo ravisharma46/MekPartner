@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.mekpartner.R;
@@ -22,6 +23,8 @@ public class bike_fragment extends Fragment {
     private TextView btn_general_service_details, btn_reparing_details,btn_wheel_care_details,btn_body_part_fixer,btn_bike_and_engine,btn_others;
     private LinearLayout general, reparing, wheelcare, bodyPartFixer, bikeandengine,others;
     private boolean isExpand = false;
+    private ScrollView mscrollView;
+    private LinearLayout ll1;
 
     public bike_fragment() {
         // Required empty public constructor
@@ -47,6 +50,9 @@ public class bike_fragment extends Fragment {
         bodyPartFixer = v.findViewById(R.id.btn_bike_body_part_fixer);
         bikeandengine = v.findViewById(R.id.btn_bike_and_engine);
         others = v.findViewById(R.id.btn_bike_others);
+        mscrollView=v.findViewById(R.id.sc_scrollView);
+
+        ll1=v.findViewById(R.id.ll_bikeandenginecare);
 
         btn_general_service_details.setOnClickListener(view -> {
 
@@ -69,6 +75,7 @@ public class bike_fragment extends Fragment {
                 bikeandengine.setVisibility(View.GONE);
                 isExpand = false;
             }
+
 
         });
 
