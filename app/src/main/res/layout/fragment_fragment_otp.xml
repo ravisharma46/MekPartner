@@ -87,8 +87,7 @@
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:textSize="24sp"
                 app:oev_primary_color="@color/chart_deep_red"
-                app:oev_secondary_color="@color/light_gray"
-                />
+                app:oev_secondary_color="@color/light_gray" />
         </FrameLayout>
 
         <TextView

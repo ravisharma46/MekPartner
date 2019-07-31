@@ -16,9 +16,6 @@ import com.example.mekpartner.R;
 
 import java.util.Objects;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class FragmentOTP extends Fragment {
 
     private View inflate;

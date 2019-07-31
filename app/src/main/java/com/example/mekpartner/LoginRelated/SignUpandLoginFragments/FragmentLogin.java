@@ -19,9 +19,6 @@ import com.example.mekpartner.R;
 
 import java.util.Objects;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class FragmentLogin extends Fragment {
 
     private View mRootView;
@@ -40,13 +37,10 @@ public class FragmentLogin extends Fragment {
 
         faq = mRootView.findViewById(R.id.faq);
 
-        faq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        faq.setOnClickListener(view -> {
 
-                Intent faqIntent = new Intent(getActivity(), Faq_activity.class);
-                startActivity(faqIntent);
-            }
+            Intent faqIntent = new Intent(getActivity(), Faq_activity.class);
+            startActivity(faqIntent);
         });
 
 
