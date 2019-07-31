@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,12 +10,15 @@
 
 <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+       android:id="@+id/sc_scrollView"
+       android:layout_alignParentTop="true"
+       android:layout_marginBottom="84dp"
+       android:nestedScrollingEnabled="true"
+          android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="24dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -25,6 +28,7 @@
                 android:background="@drawable/gradient_bottom"
                 android:scaleY=".5" />
 
+            <!--Available to all services -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,6 +90,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_height="match_parent">
 
+                <!--service details-->
 
                 <FrameLayout
                     android:layout_marginTop="8dp"
@@ -93,25 +98,27 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/gotham_book"
-                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/offwhite"
                         android:text="Service Details"
                         android:paddingLeft="16dp"
                         android:layout_gravity="left"/>
 
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Availability"
+                        android:textColor="@color/offwhite"
                         android:fontFamily="@font/montserrat_medium"
                         android:paddingLeft="16dp"
                         android:paddingRight="24dp"
                         android:layout_gravity="right"/>
                 </FrameLayout>
+
 
                 <!--general servies-->
                 <LinearLayout
@@ -133,7 +140,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/generl_services"
                             android:gravity="start"
                             android:focusable="true"
@@ -147,7 +154,7 @@
                             android:drawableLeft="@drawable/generl_services" />
 
                         <TextView
-                            android:id="@+id/btn_details"
+                            android:id="@+id/btn_gen_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -155,7 +162,7 @@
                             android:focusable="true"
                             android:paddingBottom="16dp"
                             android:paddingTop="16dp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:textAllCaps="false"
                             android:text="Details"
@@ -165,6 +172,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/generalDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -180,7 +188,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/primary_services"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -224,7 +232,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/standard"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -268,7 +276,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/comprehensive"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -305,6 +313,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--Reparing -->
 
                 <LinearLayout
@@ -325,7 +335,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/reparing"
                             android:gravity="start"
                             android:focusable="true"
@@ -339,11 +349,11 @@
                             android:drawableLeft="@drawable/reparing" />
 
                         <TextView
-                            android:id="@+id/btn_general_services_details"
+                            android:id="@+id/btn_reparing_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:gravity="right"
                             android:focusable="true"
@@ -357,6 +367,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/reparingDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -372,7 +383,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/primary_services"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -415,7 +426,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/brake_pad__disk_replacementxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -457,7 +468,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/ac_checkxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -498,7 +509,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/ac_gas_refillxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -539,7 +550,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/ac_servicexhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -580,7 +591,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/clutch_checkxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -623,7 +634,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/battery__chargingxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -665,7 +676,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/other_diagnosisxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -706,7 +717,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/scanningxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -744,6 +755,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--WHEEL CARING-->
 
                 <LinearLayout
@@ -764,7 +777,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/wheel_caring"
                             android:gravity="start"
                             android:focusable="true"
@@ -778,7 +791,7 @@
                             android:drawableLeft="@drawable/wheel_caring" />
 
                         <TextView
-                            android:id="@+id/btn_wheel_care_services_details"
+                            android:id="@+id/btn_wheel_care_details"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -786,7 +799,7 @@
                             android:focusable="true"
                             android:paddingBottom="16dp"
                             android:paddingTop="16dp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:text="Details"
                             android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24_16dp"/>
@@ -795,41 +808,46 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/wheelcareDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_allignmentxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_allignmentxhdpi"
+                                android:fontFamily="@font/gotham_medium_regular"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL ALIGNMENT"
-                                android:drawableLeft="@drawable/wheel_allignmentxhdpi" />
+                                android:text="Wheel Alignment" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -842,36 +860,39 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_balancingxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_balancingxhdpi"
+                                android:fontFamily="@font/gotham_medium_regular"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL BALANCING"
-                                android:drawableLeft="@drawable/wheel_balancingxhdpi" />
+                                android:text="Wheel Balancing" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:id="@+id/wheel_standard_services"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -884,39 +905,39 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:weightSum="2"
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wheel_allignment_and_balancingxhdpi"/>
+
                             <TextView
-                                android:layout_weight="0.5"
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/wheel_allignment_and_balancingxhdpi"
+                                android:fontFamily="@font/gotham_medium_regular"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="WHEEL ALIGNMENT AND BALANCING"
-                                android:drawableLeft="@drawable/wheel_allignment_and_balancingxhdpi" />
+                                android:text="Wheel Alignment And Balancing" />
 
                             <FrameLayout
-                                android:layout_weight="1.5"
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:id="@+id/wheel_comprehensive_services"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -929,35 +950,39 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:weightSum="1"
                             android:paddingRight="8dp"
+                            android:paddingTop="16dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/tyre_replacementxhdpi"/>
+
                             <TextView
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
-                                android:drawableStart="@drawable/tyre_replacementxhdpi"
+                                android:fontFamily="@font/gotham_medium_regular"
+                                android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
-                                android:paddingLeft="8dp"
-                                android:paddingTop="16dp"
                                 android:paddingBottom="16dp"
-                                android:drawablePadding="8dp"
                                 android:textColor="@color/mek_grey"
-                                android:textAllCaps="false"
-                                android:text="TYRE REPLACEMENT"
-                                android:drawableLeft="@drawable/tyre_replacementxhdpi" />
+                                android:text="Tyre Replacement" />
 
                             <FrameLayout
                                 android:paddingRight="8dp"
-                                android:layout_width="match_parent"
+                                android:layout_width="64dp"
                                 android:layout_height="match_parent">
 
                                 <Switch
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="48dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
                                     android:gravity="right"
@@ -974,6 +999,8 @@
 
 
                 </LinearLayout>
+
+
 
                 <!--Denting Painting-->
 
@@ -995,7 +1022,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/dentingpainting"
                             android:gravity="start"
                             android:focusable="true"
@@ -1013,7 +1040,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:gravity="right"
                             android:focusable="true"
@@ -1027,6 +1054,8 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/dentingPentingDetails"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1051,7 +1080,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1097,7 +1126,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1143,7 +1172,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1189,7 +1218,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1235,7 +1264,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1281,7 +1310,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1327,7 +1356,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1373,7 +1402,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1419,7 +1448,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1465,7 +1494,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1511,7 +1540,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1557,7 +1586,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1603,7 +1632,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1649,7 +1678,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1695,7 +1724,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1741,7 +1770,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:paddingLeft="8dp"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1773,6 +1802,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--car care-->
 
                 <LinearLayout
@@ -1793,7 +1824,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/car_care"
                             android:gravity="start"
                             android:focusable="true"
@@ -1811,7 +1842,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:gravity="right"
                             android:focusable="true"
@@ -1824,6 +1855,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/carcareDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1839,7 +1871,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/car_washxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1880,7 +1912,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/interior_dry_cleaningxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1920,7 +1952,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/exterior_car_rubbing_xhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -1962,7 +1994,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/complete__car_detalingxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -2003,7 +2035,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/teflon_coatingxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -2044,7 +2076,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/nano_coatingxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -2081,6 +2113,8 @@
 
                 </LinearLayout>
 
+
+
                 <!--Others-->
 
                 <LinearLayout
@@ -2098,11 +2132,10 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/btn_others"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
-                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:drawableStart="@drawable/others"
                             android:gravity="start"
                             android:focusable="true"
@@ -2124,7 +2157,7 @@
                             android:focusable="true"
                             android:paddingBottom="16dp"
                             android:paddingTop="16dp"
-                            android:fontFamily="@font/gotham_book"
+                            android:fontFamily="@font/gotham_medium_regular"
                             android:textColor="@color/black"
                             android:textAllCaps="false"
                             android:text="Details"
@@ -2134,6 +2167,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/otherDetails"
                         android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -2149,7 +2183,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:gravity="start"
                                 android:focusable="true"
                                 android:paddingLeft="8dp"
@@ -2185,6 +2219,7 @@
                         <LinearLayout
                             android:paddingRight="8dp"
                             android:orientation="horizontal"
+                            android:layout_marginBottom="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -2192,7 +2227,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="12sp"
-                                android:fontFamily="@font/gotham_book"
+                                android:fontFamily="@font/gotham_medium_regular"
                                 android:drawableStart="@drawable/other_electricalxhdpi"
                                 android:gravity="start"
                                 android:focusable="true"
@@ -2230,17 +2265,8 @@
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/bt_done"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/done_red_button"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Done"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
+
+
 
 
             </LinearLayout>
@@ -2250,4 +2276,24 @@
 
     </ScrollView>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_1"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_done"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/done_red_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

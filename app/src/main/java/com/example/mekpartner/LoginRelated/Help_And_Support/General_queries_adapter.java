@@ -16,27 +16,27 @@ import com.example.mekpartner.R;
 
 import java.util.ArrayList;
 
-public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
+public class General_queries_adapter extends RecyclerView.Adapter<General_queries_adapter.ViewHolder> {
 
     private Context context;
-    private ArrayList<FaqData> faqData;
+    private ArrayList<General_Queeries_data> queeriesData;
 
-    public FaqAdapter(Context context, ArrayList<FaqData> faqData) {
+    public General_queries_adapter(Context context, ArrayList<General_Queeries_data> queeriesData) {
         this.context = context;
-        this.faqData = faqData;
+        this.queeriesData = queeriesData;
     }
 
     @NonNull
     @Override
-    public FaqAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.faqitems, parent, false);
-        return new FaqAdapter.ViewHolder(v);
+    public General_queries_adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.queries_item, parent, false);
+        return new General_queries_adapter.ViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FaqAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull General_queries_adapter.ViewHolder holder, int position) {
 
-        final FaqData item = faqData.get(position);
+        final General_Queeries_data item = queeriesData.get(position);
 
         final Typeface fontHeading = ResourcesCompat.getFont(context,R.font.gotham_medium_regular);
         final Typeface fontnormal = ResourcesCompat.getFont(context,R.font.montserrat_regular);
@@ -56,7 +56,7 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
 
             else if(item.getId().equals(2) ){
 
-                holder.mtextView.setTextSize(12);
+                holder.mtextView.setTextSize(14);
                 holder.mtextView.setTextColor(Color.BLACK);
                 holder.mtextView.setPadding(8,0,0,0);
                 holder.mtextView.setTypeface(fontHeading);
@@ -78,14 +78,11 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
         else {
 
         }
-
     }
-
-
 
     @Override
     public int getItemCount() {
-        return faqData.size();
+        return queeriesData.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -96,7 +93,7 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
         public ViewHolder(@NonNull View view) {
             super(view);
             this.view = view;
-            mtextView = view.findViewById(R.id.faqtext);
+            mtextView = view.findViewById(R.id.txtQueries);
         }
     }
 }
