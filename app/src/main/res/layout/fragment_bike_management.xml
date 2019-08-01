@@ -68,7 +68,7 @@
                         android:layout_gravity="right|center"
                         android:layout_marginRight="32dp"
                         android:enabled="true"
-                        android:theme="@style/SwitchCompatTheme"
+                       style="@style/SwitchCompatStyle"
                         android:switchMinWidth="48dp"
                         />
 
@@ -215,7 +215,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -259,7 +259,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -303,7 +303,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -408,7 +408,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -449,7 +449,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -490,7 +490,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -535,7 +535,7 @@
                                     android:enabled="true"
                                     android:gravity="right"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -576,7 +576,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -617,7 +617,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -658,7 +658,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -699,7 +699,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -740,7 +740,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -775,16 +775,16 @@
                                 android:layout_weight="1"
                                 android:paddingRight="8dp"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                                android:layout_height="match_parent">
 
                                 <Switch
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|end"
-                                    android:gravity="right|center"
+                                    android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -828,7 +828,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -869,7 +869,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -910,7 +910,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -951,7 +951,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -992,7 +992,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1033,7 +1033,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1074,7 +1074,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1115,7 +1115,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1156,7 +1156,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1200,7 +1200,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1244,7 +1244,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1285,7 +1285,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1326,7 +1326,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1367,7 +1367,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1408,7 +1408,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1449,7 +1449,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1553,7 +1553,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1595,7 +1595,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1637,7 +1637,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1681,7 +1681,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1722,7 +1722,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1763,7 +1763,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1804,7 +1804,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1845,7 +1845,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1952,7 +1952,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -1994,7 +1994,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2036,7 +2036,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2077,7 +2077,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2118,7 +2118,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2159,7 +2159,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2200,7 +2200,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2241,7 +2241,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2282,7 +2282,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2323,7 +2323,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2364,7 +2364,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2405,7 +2405,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2446,7 +2446,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2487,7 +2487,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2528,7 +2528,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2569,7 +2569,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2676,7 +2676,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2716,7 +2716,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2758,7 +2758,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2800,7 +2800,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2841,7 +2841,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2882,7 +2882,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2923,7 +2923,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -2964,7 +2964,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -3005,7 +3005,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -3046,7 +3046,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -3087,7 +3087,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -3194,7 +3194,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 
@@ -3237,7 +3237,7 @@
                                     android:gravity="right"
                                     android:enabled="true"
                                     android:switchMinWidth="48dp"
-                                    android:theme="@style/SwitchCompatTheme" />
+                                   style="@style/SwitchCompatStyle" />
 
                             </FrameLayout>
 

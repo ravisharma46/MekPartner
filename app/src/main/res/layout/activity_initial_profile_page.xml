@@ -124,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:enabled="true"
-                        android:theme="@style/SwitchCompatTheme"
+                        style="@style/SwitchCompatStyle"
                         android:switchMinWidth="48dp"
                         />
 

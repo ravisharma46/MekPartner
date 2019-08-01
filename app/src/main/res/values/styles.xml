@@ -32,6 +32,13 @@
 
     </style>
 
+    <style name="SwitchCompatStyle" >
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+    </style>
+
+
+
 
     <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
 

@@ -26,21 +26,45 @@
             android:layout_height="wrap_content" />
 
 
-        <TableLayout
-            android:id="@+id/tabs_car_services"
-            style="@style/MyCustomTabLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:tabBackground="@drawable/tab_color_selector"
-            app:tabIndicatorColor="@null"
-            app:tabMode="scrollable"
-            app:tabPaddingEnd="6dp"
-            app:tabPaddingStart="8dp" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs_car_services"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabIndicatorColor="@null"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="6dp"
+                app:tabPaddingStart="8dp" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_car_services"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+        </LinearLayout>
 
         <FrameLayout
             android:id="@+id/fragment_Frame"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <include layout="@layout/fragment_general"/>
