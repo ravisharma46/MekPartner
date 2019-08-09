@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -14,12 +15,14 @@ import com.example.mekpartner.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
 
-    public int[] images = {R.drawable.on_boarding_car, R.drawable.on_boarding_phone, R.drawable.on_boarding_map};
-    public String[] titleArray = {"Service with perfaction", "Smartest way of Care \n your vehicle", "Emanated in India"};
+    private int[] images = {R.drawable.on_boarding_car, R.drawable.on_boarding_phone, R.drawable.on_boarding_map};
+    private String[] titleArray = {"Service with Perfection", "Smartest way of Care your Vehicle", "Emanated in India"};
+    private String[] descArray = {"Mekvahan is a network of technology-enabled car & bike service centres, offering a seamless service experience at the convenience of a tap.",
+    "Our vast network of Car & Bike Service Centres uses only OEM/OES spare parts and high-quality consumables which ensures, what goes into your vehicle  is nothing but the best.",
+    "India’s best automobile service venture that aims at providing its outstanding assistance & services to all the two- &  four-wheeler vehicle owners."};
     private Context context;
-    private LayoutInflater layoutInflater;
 
-    public ViewPagerAdapter(Context context) {
+    ViewPagerAdapter(Context context) {
         this.context = context;
     }
 
@@ -29,14 +32,15 @@ public class ViewPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public boolean isViewFromObject(View view, Object object) {
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
         return (view == object);
     }
 
+    @NonNull
     @Override
-    public Object instantiateItem(ViewGroup container, final int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
 
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.on_boarding_slider, null);
         ImageView imageView = view.findViewById(R.id.im_slider);
 
@@ -46,8 +50,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         imageView.setImageResource(images[position]);
         title.setText(titleArray[position]);
 
-        desc.setText("Lorem Ipsum is simply dummy text\n of the printing and typesting industry. ");
-
+        desc.setText(descArray[position]);
 
         ViewPager vp = (ViewPager) container;
         vp.addView(view, 0);
@@ -56,7 +59,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(ViewGroup container, int position, Object object) {
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
 
         ViewPager vp = (ViewPager) container;
         View view = (View) object;
