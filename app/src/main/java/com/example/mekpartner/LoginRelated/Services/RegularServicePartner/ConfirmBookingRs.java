@@ -1,5 +1,6 @@
 package com.example.mekpartner.LoginRelated.Services.RegularServicePartner;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -52,8 +53,6 @@ public class ConfirmBookingRs extends AppCompatActivity {
             }
         }
 
-
-
     }
 
     public void onAcceptButtonClick(View view) {
@@ -103,13 +102,11 @@ public class ConfirmBookingRs extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -119,6 +116,5 @@ public class ConfirmBookingRs extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
     }
-
 
 }

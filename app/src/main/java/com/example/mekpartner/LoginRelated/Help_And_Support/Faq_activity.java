@@ -1,4 +1,5 @@
 package com.example.mekpartner.LoginRelated.Help_And_Support;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,7 +37,7 @@ public class Faq_activity extends AppCompatActivity {
 
         }
         catch(Exception e){
-
+            e.printStackTrace();
         }
 
         ArrayList<FaqData> list = new ArrayList<>();
@@ -151,20 +152,14 @@ public class Faq_activity extends AppCompatActivity {
         list.add(new FaqData("22. Would I get compensation if the customer has replaced the original parts or particulars with a different item and claim for refund?\n",2));
         list.add(new FaqData("Yes, you can raise a claim through Seller Protection Fund. Depending on the case and category, you will be given a refund provided if you have adequate proof that you replace the right product. This will may help us close the dispute in your favour.\n",3));
 
-        list.add(new FaqData("How Can You Offer 40% Savings On Services? \n",2));
-
-
-
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

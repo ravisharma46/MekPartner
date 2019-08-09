@@ -15,7 +15,8 @@
             android:layout_height="144dp"
             android:scaleType="centerCrop"
             android:scaleX="2"
-            android:src="@drawable/login_watermark"/>
+            android:src="@drawable/login_watermark"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <FrameLayout

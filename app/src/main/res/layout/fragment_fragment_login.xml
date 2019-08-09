@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
     tools:context=".LoginRelated.SignUpandLoginFragments.FragmentLogin">
-
 
     <ImageView
         android:layout_marginTop="16dp"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/mek_logo"
         android:gravity="center"
-        />
+        tools:ignore="ContentDescription" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,7 +43,6 @@
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/short_desc"
                 android:textColor="@color/black" />
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,15 +82,14 @@
                     android:layout_gravity="bottom"
                     android:layout_marginTop="64dp"
                     android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/faq"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
-                        android:drawableLeft="@drawable/faq"
+                        android:drawableStart="@drawable/faq"
                         android:drawablePadding="16dp"
-                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:drawableEnd="@drawable/ic_arrow_right"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:paddingBottom="8dp"
                         android:paddingTop="8dp"
@@ -111,25 +109,20 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:layout_marginTop="8dp"
-                        android:drawableLeft="@drawable/feedback"
+                        android:drawableStart="@drawable/feedback"
                         android:drawablePadding="16dp"
-                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:drawableEnd="@drawable/ic_arrow_right"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:paddingTop="8dp"
                         android:textSize="14sp"
                         android:text="Send Feedback"
                         android:textColor="@color/black" />
-
                 </LinearLayout>
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </FrameLayout>

@@ -241,7 +241,7 @@
 					android:onClick="viewText"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="1. First Question of FAQ?"
+					android:text="1. What’s new with Mekcoins &amp; Mekcoins wallet? "
 					android:textAlignment="textStart"
 					android:textAllCaps="false"
 					android:textSize="12sp" />
@@ -259,10 +259,24 @@
 					android:layout_height="wrap_content"
 					android:fontFamily="@font/gotham_book"
 					android:padding="16dp"
+					android:text="We have made the Mekcoins rules quite simple and more beneficial
+					for all the users! Now you can use flat Mekcoins of the transaction amount,
+					instead of the other modes of payment. Earn much more Mekcoins than ever before
+					and you can save more of the transaction value on every service of bike or car
+					category, basis the specific offer on the category. Mekcoins Earn &amp; Burn is
+					now more personalized to enhance your experience. If you have accumulated
+					Mekcoins balance then Mekcoins burn gets prioritized for you to enjoy immediate
+					benefit."
 					android:textColor="@android:color/black"
-					android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 					android:textSize="12sp"
 					android:visibility="gone" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
 
 				<Button
 					android:id="@+id/btn2"
@@ -275,7 +289,7 @@
 					android:onClick="viewText"
 					android:textColor="@android:color/black"
 					android:padding="16dp"
-					android:text="2. Second Question of FAQ?"
+					android:text="2. How Mekcoins works? "
 					android:textAlignment="textStart"
 					android:textAllCaps="false"
 					android:textSize="12sp" />
@@ -294,9 +308,18 @@
 					android:fontFamily="@font/gotham_book"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+					android:text="Mekcoins is a way of ensuring that you get a discount on each
+					transaction. Mekcoins works on the same lines as cashback,Now you can use flat
+					Mekcoins of the transaction amount, instead of the other modes of payment."
 					android:textSize="12sp"
 					android:visibility="gone" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
 
 				<Button
 					android:id="@+id/btn3"
@@ -309,7 +332,7 @@
 					android:onClick="viewText"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="3. Third Question of FAQ?"
+					android:text="3. How do I earn SuperCash?"
 					android:textAlignment="textStart"
 					android:textAllCaps="false"
 					android:textSize="12sp" />
@@ -328,9 +351,18 @@
 					android:fontFamily="@font/gotham_book"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+					android:text="Offers/promo codes/ coupons can be used to earn Mekcoins, which is
+					automatically credited in your wallet basis the specific T&amp;C of the offer. You
+					can add SuperCash with help of coupon codes on redeem voucher page."
 					android:textSize="12sp"
 					android:visibility="gone" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
 
 				<Button
 					android:id="@+id/btn4"
@@ -343,7 +375,7 @@
 					android:onClick="viewText"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="4. Fourth Question of FAQ?"
+					android:text="4. Is there any minimum transaction limit to use Mekcoins? "
 					android:textAlignment="textStart"
 					android:textAllCaps="false"
 					android:textSize="12sp" />
@@ -362,9 +394,17 @@
 					android:fontFamily="@font/gotham_book"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+					android:text="There is no minimum transaction limit for any service payment on
+					our app(like general service of car or bike, repairing, car care, etc.)"
 					android:textSize="12sp"
 					android:visibility="gone" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
 
 				<Button
 					android:id="@+id/btn5"
@@ -377,10 +417,17 @@
 					android:onClick="viewText"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="5. Fifth Question of FAQ?"
+					android:text="5. Will my Mekcoins wallet amount expire?"
 					android:textAlignment="textStart"
 					android:textAllCaps="false"
 					android:textSize="12sp" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
 
 				<TextView
 					android:id="@+id/tvbtn5"
@@ -389,7 +436,50 @@
 					android:fontFamily="@font/gotham_book"
 					android:padding="16dp"
 					android:textColor="@android:color/black"
-					android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+					android:text="Absolutely not! Mekcoins wallet amount, never expires."
+					android:textSize="12sp"
+					android:visibility="gone" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
+
+				<Button
+					android:id="@+id/btn6"
+					style="?attr/buttonBarButtonStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/ripple_buttton"
+					android:drawableEnd="@drawable/ic_key_arrow_right"
+					android:fontFamily="@font/gotham_book"
+					android:onClick="viewText"
+					android:padding="16dp"
+					android:drawablePadding="4dp"
+					android:textColor="@android:color/black"
+					android:text="6. Can I transfer SuperCash to other MobiKwik wallets or a bank account?"
+					android:textAlignment="textStart"
+					android:textAllCaps="false"
+					android:textSize="12sp" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="end"
+					android:alpha="0.5"
+					android:background="@color/alto" />
+
+				<TextView
+					android:id="@+id/tvbtn6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/gotham_book"
+					android:padding="16dp"
+					android:textColor="@android:color/black"
+					android:text=" Sorry! You cannot transfer Mekcoins to another wallet or to a
+					bank account. You can use it everywhere on Mekvahan for all transactions."
 					android:textSize="12sp"
 					android:visibility="gone" />
 			</LinearLayout>
