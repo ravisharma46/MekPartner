@@ -1,6 +1,5 @@
 package com.example.mekpartner.LoginRelated.SignUpandLoginFragments;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 

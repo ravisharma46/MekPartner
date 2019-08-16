@@ -1,8 +1,6 @@
 package com.example.mekpartner.LoginRelated.mekcoins_wallet;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
