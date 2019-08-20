@@ -143,8 +143,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         }
     }
 
-
-
     private  void setBottomNavigation(){
 
         BottomNavigationView navigation = findViewById(R.id.navigation);

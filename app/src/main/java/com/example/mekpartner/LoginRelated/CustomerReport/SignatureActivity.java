@@ -43,8 +43,6 @@ public class SignatureActivity extends AppCompatActivity {
         save_button = findViewById(R.id.save_button);
         mSignaturePad = findViewById(R.id.signature_pad);
 
-
-
         try{
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
@@ -70,9 +68,6 @@ public class SignatureActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Bitmap signatureBitmap = mSignaturePad.getSignatureBitmap();
 
-
-                ;
-
                 Intent intent= new Intent();
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 signatureBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
@@ -80,7 +75,6 @@ public class SignatureActivity extends AppCompatActivity {
                 intent.putExtra("image", bytes);
                 setResult(2,intent);
                 finish();
-
 
             }
         });
