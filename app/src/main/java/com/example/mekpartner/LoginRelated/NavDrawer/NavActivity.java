@@ -148,6 +148,7 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = item -> {
 //                Fragment fragment;
@@ -425,8 +426,6 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         return true;
     }
 
-
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -460,4 +459,5 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         return super.onOptionsItemSelected(item);
 
     }
+
 }

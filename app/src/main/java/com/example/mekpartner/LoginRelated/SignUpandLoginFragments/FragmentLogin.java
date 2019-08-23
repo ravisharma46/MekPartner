@@ -27,7 +27,6 @@ public class FragmentLogin extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,7 +40,6 @@ public class FragmentLogin extends Fragment {
             Intent faqIntent = new Intent(getActivity(), Faq_activity.class);
             startActivity(faqIntent);
         });
-
 
         clickListener();
         return mRootView;
