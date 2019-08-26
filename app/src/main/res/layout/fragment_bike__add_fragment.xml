@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".LoginRelated.CustomerReport.Bike_Add_fragment">
+    tools:context=".customer_report.Bike_Add_fragment">
 
     <LinearLayout
         android:layout_width="match_parent"

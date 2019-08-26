@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.RegularServicePartner.CustomerPickup">
+    tools:ignore="HardcodedText,ContentDescription,RtlSymmetry,UnusedAttribute"
+    tools:context=".services.regular_service_partner.CustomerPickup">
 
 
     <FrameLayout
@@ -20,7 +21,7 @@
             android:paddingLeft="16dp"
             android:gravity="center"
             android:paddingRight="16dp"
-            android:text="Awaiting Pickup"
+            android:text="Awaiting customer pickup"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -40,15 +41,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginRight="16dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat_semi_bold"
                     android:text="Vehicle details"
@@ -73,7 +74,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Maruti Suzuki"
@@ -83,7 +84,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
                             android:layout_marginTop="40dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="WagonR"
@@ -94,7 +95,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
                             android:layout_marginTop="64dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="DL1R0ABC"
@@ -106,7 +107,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:layout_weight="1"
                         android:padding="16dp"
                         android:src="@drawable/maruti_suzuki" />
@@ -118,8 +119,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat_semi_bold"
                     android:text="Service type"
@@ -136,8 +137,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:clickable="true"
                         android:fontFamily="@font/montserrat_semi_bold"
@@ -149,7 +150,7 @@
                         android:id="@+id/tvDetails_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:layout_marginRight="12dp"
                         android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
                         android:drawablePadding="4dp"
@@ -158,7 +159,6 @@
                         android:text="Details"
                         android:textColor="@color/chart_deep_red"
                         android:textSize="10sp" />
-
 
                 </FrameLayout>
 
@@ -179,8 +179,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Interior cleaning"
@@ -190,7 +190,7 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_gravity="right"
+                            android:layout_gravity="end"
                             android:layout_marginRight="8dp"
                             android:padding="16dp"
                             android:src="@drawable/checked_svg" />
@@ -207,8 +207,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Exterior cleaning"
@@ -218,7 +218,7 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_gravity="right"
+                            android:layout_gravity="end"
                             android:layout_marginRight="8dp"
                             android:padding="16dp"
                             android:src="@drawable/checked_svg" />
@@ -235,8 +235,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Dashboard cleaning"
@@ -246,7 +246,7 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_gravity="right"
+                            android:layout_gravity="end"
                             android:layout_marginRight="8dp"
                             android:padding="16dp"
                             android:src="@drawable/checked_svg" />
@@ -263,8 +263,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="@string/rubbing"
@@ -274,7 +274,7 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_gravity="right"
+                            android:layout_gravity="end"
                             android:layout_marginRight="8dp"
                             android:padding="16dp"
                             android:src="@drawable/checked_svg" />
@@ -289,11 +289,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat_semi_bold"
-                    android:text="Partner details"
+                    android:text="Customer details"
                     android:textColor="@color/app_grey_headline_caption"
                     android:textSize="12sp" />
 
@@ -307,7 +307,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Name"
@@ -317,10 +317,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="40dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Name of the partner"
+                        android:text="Name of the customer"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -328,7 +328,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="72dp"
                         android:layout_marginRight="8dp"
                         android:background="@drawable/gradient_bottom"
@@ -338,7 +338,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="88dp"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Address"
@@ -348,11 +348,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="116dp"
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Address of the partner"
+                        android:text="Address of the customer"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -362,7 +362,7 @@
                         android:id="@+id/call"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:layout_marginRight="8dp"
                         android:padding="16dp"
                         android:src="@drawable/mobile_svg" />
@@ -370,7 +370,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:layout_marginTop="44dp"
                         android:layout_marginRight="20dp"
                         android:fontFamily="@font/montserrat_semi_bold"
@@ -385,11 +385,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/montserrat_semi_bold"
-                    android:text="@string/drop_date"
+                    android:text="Pickup date &amp; time"
                     android:textColor="@color/app_grey_headline_caption"
                     android:textSize="12sp" />
 
@@ -404,7 +404,7 @@
                         android:id="@+id/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:fontFamily="@font/montserrat_medium"
                         android:padding="16dp"
                         android:text="Tuesday, 25th Aug"
@@ -416,7 +416,7 @@
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:layout_marginRight="16dp"
                         android:fontFamily="@font/montserrat_medium"
                         android:padding="16dp"
@@ -424,18 +424,201 @@
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/frame_rect"
+                    android:weightSum="3"
+                    android:baselineAligned="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/app_divider_list"
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="1.2 km"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/app_divider_list"
+                        android:padding="12dp"
+                        android:text="@string/_15_min_approx"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:id="@+id/ll_navigation"
+                        android:background="@color/orange"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_navigate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/navigate"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvcustomer_report"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/grey_button"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="28dp"
+                    android:text="Add Customer Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/to_confirm_service_nadd_vehicle_pic_confirm_otp"
+                        android:textColor="@color/app_caption_dark_grey"
+                        android:textSize="10sp" />
+
+<!--                 for this framelayout android:onClick="onAddImageButtonClick"-->
+                    <FrameLayout
+                        android:id="@+id/fv_camera_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_gravity="end">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="12dp"
+                            android:padding="8dp"
+                            android:src="@drawable/camera_dummy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="4dp"
+                            android:text="Add more pics"
+                            android:textColor="@color/orange"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
 
 
                 </FrameLayout>
 
-
+                <FrameLayout
+                    android:id="@+id/rv_imagevendorpickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="152dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/frame_rect_02" >
+                    <ImageView
+                        android:id="@+id/iv_uvpickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/image_svg" />
+                </FrameLayout>
             </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:padding="8dp"
+                android:text="Enter Customer PIN"
+                android:textColor="@color/app_caption_dark_grey"
+                android:textSize="10sp" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/frame_rect_02">
+
+                <com.broooapps.otpedittext2.OtpEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/et_otp"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:inputType="numberSigned"
+                    android:maxLength="4"
+                    android:padding="8dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textSize="24sp"
+                    app:oev_primary_color="@color/chart_deep_red"
+                    app:oev_secondary_color="@color/light_gray" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/frame_rect_02">
+                <Button
+                    android:id="@+id/bt_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/done_red_button"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Confirm"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </FrameLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
 
 </RelativeLayout>

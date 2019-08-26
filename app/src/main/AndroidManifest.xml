@@ -12,66 +12,74 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name=".LoginRelated.Cart.JobCartPartner"/>
-        <activity android:name=".LoginRelated.AddToCart.CartHomePage"/>
+        <activity android:name=".cart.JobCartPartner"/>
+        <activity android:name=".add_to_cart.CartHomePage"/>
 
-        <activity
-            android:name=".LoginRelated.TechnicalSupport.CallsSummary.CallSummaryActivity"
+        <activity android:name=".technical_support.calls_summary.CallSummaryActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".LoginRelated.SpCabs_More.History.HistorySpShowDetails"/>
-        <activity android:name=".LoginRelated.SpCabs_More.NewBooking.AcceptNewBooking"/>
-        <activity android:name=".LoginRelated.SpCabs_More.UpcomingBooking.UpcomigBookingDetailSp"/>
-        <activity android:name=".LoginRelated.SpCabs_More.Spcabs_more"/>
-        <activity android:name=".LoginRelated.TechnicalSupport.Technical_support" />
-        <activity
-            android:name=".LoginRelated.ServiceManagement.ServiceManagement"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".LoginRelated.Bookings.History.Service_completed" />
-        <activity android:name=".LoginRelated.Services.SosSP.TowingChauffer.ChaufferCustomerDropoff" />
-        <activity android:name=".LoginRelated.Services.SosSP.ForRestService.CustomerDropOff" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.PickupConfirm" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.ServiceInProgress" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.CustomerPickup" />
-        <activity android:name=".LoginRelated.Services.SosSP.ForRestService.ConfirmPickup_fRs" />
-        <activity android:name=".LoginRelated.CustomerReport.ViewCustomerReport" />
-        <activity android:name=".LoginRelated.CustomerReport.SignatureActivity" />
-        <activity android:name=".LoginRelated.CustomerReport.AddCustomerReport" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.ScanQRcode" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.Ub_PartnerDropOff" />
-        <activity android:name=".LoginRelated.Services.RegularServicePartner.ConfirmBookingRs" />
-        <activity android:name=".LoginRelated.Help_And_Support.Disclaimer"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Terms_and_Conditions"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Terms_Of_Use"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Privacy_policy"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Previous_Orders"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Pickup_Confirmed"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Need_help"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Message"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Mek_Legel_Activity"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Help_and_Support"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Faq_activity"/>
-        <activity android:name=".LoginRelated.Help_And_Support.Help"/>
-        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_02"/>
-        <activity android:name=".LoginRelated.Help_And_Support.General_Queries"/>
 
-        <activity android:name=".LoginRelated.Transaction_History.Transaction_details_01"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            />
-        <activity android:name=".LoginRelated.AboutUS.AboutUs"/>
+        <activity android:name=".sp_cabs_more.history.HistorySpShowDetails"/>
+        <activity android:name=".sp_cabs_more.new_booking.AcceptNewBooking"/>
+        <activity android:name=".sp_cabs_more.upcoming_booking.UpcomigBookingDetailSp"/>
+        <activity android:name=".sp_cabs_more.Spcabs_more"/>
+        <activity android:name=".technical_support.Technical_support" />
+
+        <activity android:name=".service_management.ServiceManagement"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".bookings.history.Service_completed" />
+
+        <activity android:name=".services.sos_sp.towing_chauffer.ChaufferCustomerDropoff"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".services.sos_sp.for_rest_service.CustomerDropOff" />
+        <activity android:name=".services.regular_service_partner.PickupConfirm" />
+
+        <activity android:name=".services.regular_service_partner.ServiceInProgress"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".services.regular_service_partner.CustomerPickup" />
+        <activity android:name=".services.sos_sp.for_rest_service.ConfirmPickup_fRs" />
+        <activity android:name=".customer_report.ViewCustomerReport" />
+        <activity android:name=".customer_report.SignatureActivity" />
+        <activity android:name=".customer_report.AddCustomerReport" />
+        <activity android:name=".services.regular_service_partner.ScanQRcode" />
+        <activity android:name=".services.regular_service_partner.Ub_PartnerDropOff" />
+        <activity android:name=".services.regular_service_partner.ConfirmBookingRs" />
+        <activity android:name=".help_and_support.Disclaimer"/>
+        <activity android:name=".help_and_support.Terms_and_Conditions"/>
+        <activity android:name=".help_and_support.Terms_Of_Use"/>
+        <activity android:name=".help_and_support.Privacy_policy"/>
+        <activity android:name=".help_and_support.Previous_Orders"/>
+        <activity android:name=".help_and_support.Pickup_Confirmed"/>
+        <activity android:name=".help_and_support.Need_help"/>
+        <activity android:name=".help_and_support.Message"/>
+        <activity android:name=".help_and_support.Mek_Legel_Activity"/>
+        <activity android:name=".help_and_support.Help_and_Support"/>
+        <activity android:name=".help_and_support.Faq_activity"/>
+        <activity android:name=".help_and_support.Help"/>
+        <activity android:name=".transaction_history.Transaction_details_02"/>
+        <activity android:name=".help_and_support.General_Queries"/>
+
+        <activity android:name=".transaction_history.Transaction_details_01"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".about_us.AboutUs"/>
         
         <activity
-            android:name=".LoginRelated.NavDrawer.NavActivity"
+            android:name=".nav_drawer.NavActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".LoginRelated.ProfileRelated.AccountDetails" />
-        <activity android:name=".LoginRelated.ProfileRelated.InitialProfilePage" />
-        <activity
-            android:name=".LoginRelated.SignUpandLoginFragments.LoginActivity"
+
+        <activity android:name=".profile_related.AccountDetails" />
+        <activity android:name=".profile_related.InitialProfilePage" />
+
+        <activity android:name=".signup_and_login.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".LoginRelated.OnboardingPages.OnboardingActivity"
+
+        <activity android:name=".onboarding_pages.OnboardingActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".LoginRelated.OnboardingPages.Splashscreen"
+
+        <activity android:name=".onboarding_pages.Splashscreen"
             android:noHistory="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -80,8 +88,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-	    <activity android:name=".LoginRelated.mekcoins_wallet.MekcoinsWalletActivity"
+
+	    <activity android:name=".mekcoins_wallet.MekcoinsWalletActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
     </application>
 
 </manifest>

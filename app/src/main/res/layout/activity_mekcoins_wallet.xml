@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:weightSum="2"
-	tools:context=".LoginRelated.mekcoins_wallet.MekcoinsWalletActivity"
+	tools:context=".mekcoins_wallet.MekcoinsWalletActivity"
 	tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute,SmallSp">
 
 	<include layout="@layout/custom_toolbar" />

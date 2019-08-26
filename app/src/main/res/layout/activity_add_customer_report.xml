@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginRelated.CustomerReport.AddCustomerReport">
+    tools:context=".customer_report.AddCustomerReport">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,13 +24,11 @@
                 android:textColor="@color/offwhite"
                 android:textSize="10sp" />
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
-
 
                 <FrameLayout
                     android:id="@+id/frame_1"
@@ -43,7 +41,7 @@
                     <ImageView
                         android:layout_width="12dp"
                         android:layout_height="match_parent"
-                        android:layout_gravity="left"
+                        android:layout_gravity="start"
                         android:background="@color/chart_deep_red" />
 
                     <ImageView
@@ -140,13 +138,9 @@
                     <FrameLayout
                         android:id="@+id/frameLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                    </FrameLayout>
-
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
-
 
             </FrameLayout>
 
@@ -418,7 +412,6 @@
                         android:textColor="@color/black"
                         android:textSize="16sp" />
                 </FrameLayout>
-
 
                 <Spinner
                     android:id="@+id/spinner_brand"

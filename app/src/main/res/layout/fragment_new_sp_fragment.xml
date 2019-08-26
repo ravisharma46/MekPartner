@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginRelated.SpCabs_More.NewBooking.New_sp_fragment">
+    tools:context=".sp_cabs_more.new_booking.New_sp_fragment">
 
     <androidx.recyclerview.widget.RecyclerView
 

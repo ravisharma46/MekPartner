@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.RegularServicePartner.Ub_PartnerDropOff">
+    tools:context=".services.regular_service_partner.Ub_PartnerDropOff">
 
 
     <FrameLayout

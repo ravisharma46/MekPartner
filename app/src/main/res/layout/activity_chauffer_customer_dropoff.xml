@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.SosSP.TowingChauffer.ChaufferCustomerDropoff">
+    tools:context=".services.sos_sp.towing_chauffer.ChaufferCustomerDropoff">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_widget"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/gray97"
+        app:contentInsetEnd="8dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Title"
+        app:titleTextColor="@android:color/black">
+        <Button
+            android:id="@+id/menu_btn"
+            style="@style/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="Update Status"
+            android:textSize="10sp" />
+    </androidx.appcompat.widget.Toolbar>
 
-    <FrameLayout
+    <TextView
+        android:id="@+id/drop_off_status"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/chart_deep_red">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/montserrat_medium"
-            android:paddingLeft="16dp"
-            android:gravity="center"
-            android:paddingRight="16dp"
-            android:text="Awaiting Customer Drop off"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-    </FrameLayout>
+        android:layout_marginTop="?actionBarSize"
+        android:background="@color/chart_deep_red"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingLeft="16dp"
+        android:gravity="center|start"
+        android:paddingRight="16dp"
+        android:text="Awaiting Customer Drop off"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:layout_marginBottom="84dp"
+        android:layout_below="@+id/drop_off_status">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -391,7 +408,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/montserrat_semi_bold"
-                    android:text="@string/drop_date"
+                    android:text="Pickup date &amp; time"
                     android:textColor="@color/app_grey_headline_caption"
                     android:textSize="12sp" />
 
@@ -642,48 +659,40 @@
                                     android:layout_marginRight="16dp"
                                     android:layout_marginBottom="16dp"
                                     android:background="@drawable/image_svg" />
-
                             </FrameLayout>
-
 
                         </LinearLayout>
 
-
                     </HorizontalScrollView>
-
 
                 </FrameLayout>
 
-
             </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="84dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/frame_rect_02">
-
-                <Button
-                    android:id="@+id/bt_drop"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="@drawable/done_red_button"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Vehicle Drop"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-
-
-            </FrameLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frame_rect_02">
+        <Button
+            android:id="@+id/bt_drop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/done_red_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Vehicle Drop"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
 
 </RelativeLayout>

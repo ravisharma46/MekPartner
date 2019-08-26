@@ -5,7 +5,7 @@
     android:scrollbars="none"
     tools:ignore="HardcodedText,UnusedAttribute,SmallSp"
     android:layout_height="match_parent"
-    tools:context=".LoginRelated.Services.RegularServicePartner.ConfirmBookingRs" >
+    tools:context=".services.regular_service_partner.ConfirmBookingRs" >
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -126,6 +126,7 @@
                     android:text="Service type"
                     android:layout_height="wrap_content" />
 
+<!--                best if used recycler view for this part of layout-->
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:background="@drawable/frame_rect"
@@ -144,6 +145,8 @@
                         android:text="Denting Painting"
                         android:layout_height="wrap_content"
                         android:focusable="true" />
+
+<!--                    hide and unhide all servies on click-->
                     <TextView
                         android:layout_width="wrap_content"
                         android:textSize="10sp"
@@ -272,6 +275,90 @@
                             android:padding="16dp"
                             android:layout_height="48dp"
                             tools:ignore="ContentDescription" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/payment_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="32dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment details"
+                        android:textSize="12sp"
+                        android:textColor="@color/app_grey_headline_caption"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montserrat_semi_bold"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifthRelative"
+                    android:orientation="vertical"
+                    android:background="@drawable/frame_rect_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp">
+
+                    <FrameLayout
+                        android:id="@+id/subtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Sub Total "
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="3200"
+                            android:textSize="12sp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="24dp"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/additional_charges"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:layout_marginStart="24dp"
+                            android:text="Additional Charges*"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="200"
+                            android:textSize="12sp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="24dp"
+                            android:layout_height="wrap_content" />
                     </FrameLayout>
 
                 </LinearLayout>

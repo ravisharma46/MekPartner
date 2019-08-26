@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginRelated.Transaction_History.Transaction_details_01">
+    tools:context=".transaction_history.Transaction_details_01">
 
     <FrameLayout
         android:layout_width="match_parent"

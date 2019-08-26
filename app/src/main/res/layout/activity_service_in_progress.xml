@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.RegularServicePartner.ServiceInProgress">
+    tools:context=".services.regular_service_partner.ServiceInProgress">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/service_toolbar_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray97"
+        app:contentInsetEnd="8dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="#123"
+        app:titleTextColor="@android:color/black">
+        <Button
+            android:id="@+id/service_menu_btn"
+            style="@style/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="Update Statue"
+            android:textSize="10sp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:layout_marginTop="?actionBarSize"
         android:id="@+id/frame_1"
         android:layout_alignParentTop="true"
         android:background="@color/orange">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -27,16 +47,12 @@
             android:text="Service in progress"
             android:textColor="@color/white"
             android:textSize="14sp" />
-
     </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_below="@+id/frame1"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp">
-
-
+        android:layout_below="@+id/frame_1"
+        android:layout_height="match_parent" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,7 +80,6 @@
                     android:background="@drawable/frame_rect_02"
                     android:orientation="horizontal"
                     android:weightSum="2">
-
 
                     <FrameLayout
                         android:layout_width="wrap_content"
@@ -366,12 +381,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/frame_rect_02"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-
-
-
+        android:orientation="vertical" >
         <Button
             android:id="@+id/bt_serviceComplete"
             android:layout_width="match_parent"
@@ -386,10 +396,6 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp" />
-
-
-
     </LinearLayout>
-
 
 </RelativeLayout>

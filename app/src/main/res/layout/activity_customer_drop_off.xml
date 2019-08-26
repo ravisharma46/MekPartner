@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.SosSP.ForRestService.CustomerDropOff">
+    tools:context=".services.sos_sp.for_rest_service.CustomerDropOff">
 
 
     <FrameLayout

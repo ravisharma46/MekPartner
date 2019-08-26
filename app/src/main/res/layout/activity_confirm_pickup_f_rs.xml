@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
-    tools:context=".LoginRelated.Services.SosSP.ForRestService.ConfirmPickup_fRs">
-
+    tools:context=".services.sos_sp.for_rest_service.ConfirmPickup_fRs">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -23,8 +19,7 @@
             android:paddingLeft="16dp"
             android:gravity="center"
             android:paddingRight="16dp"
-
-            android:text="Awaiting customer pickup"
+            android:text="Awaiting customer service"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -393,7 +388,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/pickup_date_time"
+                    android:text="Service date &amp; time"
                     android:textColor="@color/app_grey_headline_caption"
                     android:textSize="12sp" />
 
