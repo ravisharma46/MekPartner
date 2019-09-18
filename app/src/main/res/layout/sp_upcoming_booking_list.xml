@@ -281,17 +281,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Connect"
+                        android:text="Removed"
                         android:textColor="#ffffff"
                         android:layout_gravity="center"
                         android:fontFamily="@font/montserrat_medium"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/mobile_svg_white"
-                        android:layout_marginRight="10dp"
-                        android:layout_gravity="right|center_vertical" />
 
                 </FrameLayout>
 
